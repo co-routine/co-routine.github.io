@@ -9,6 +9,33 @@ nav.top-nav {
     width: 95%;
 }
 
+.header {
+    margin-bottom: 3rem;
+}
+.header h3 {
+    width: 100%;
+    border-bottom: .05rem solid #d0d0d0;
+}
+.header nav {
+    font-size: small;
+}
+.header nav ul li a.nav-width {
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.contents {
+    font-size: small;
+}
+.contents .links {
+    padding: 2rem 0 2rem 0;
+}
+.contents ul li {
+    list-style-type: circle;
+}
+.contents p {
+    padding-left: 0.75rem;
+}
+
 .hero {
     margin-top: 130px;
     height: 60px;
