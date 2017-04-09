@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <title>株式会社coroutine</title>
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/base.css" />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>coroutine inc.</title>
+
+    <link href="/css/base.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
   </head>
 
-  <body class="deep-orange lighten-5">
-    <header>
-      <nav class="top-nav green lighten-1" role="navigation">
-        <div class="nav-wrapper nav-wrapper-container">
-          <a href="http://co-routine.com" class="brand-logo">株式会社coroutine</a>
-          <ul class="right">
-            <li class="bold"><a href="about.html">会社概要</a></li>
-            <li class="bold"><a href="koukoku.html">電子公告</a></li>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted navbar-brand">coroutine inc.</h3>
+        <nav>
+          <ul class="nav float-right">
+            <li class="nav-item">
+              <a class="nav-width" href="#profile">会社概要</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-width" href="#publication">電子広告</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-width" href="">ブログ</a>
+            </li>
           </ul>
-        </div>
-      </nav>
-    </header>
-
-    <h5 class="hero">作成中です</h4>
-
-    <footer class="page-footer green lighten-1">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text"></h5>
-            <p class="grey-text text-lighten-4"></p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text"></h5>
-            <ul>
-            </ul>
-          </div>
-        </div>
+        </nav>
+        <div class="clearfix"></div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2016 株式会社 coroutine
+
+      <div class="contents">
+        <!-- profile -->
+        <div id="profile" class="profile">
+          <h6 class="text-muted">会社概要</h6>
+          <table class="table">
+            <tr>
+              <th>商号</th>
+              <td>株式会社coroutine</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>〒540-0025<br/>
+              大阪府大阪市中央区徳井町 1-2-9 ZERO ONE 谷町 701</td>
+            </tr>
+            <tr>
+              <th>連絡先</th>
+              <td>contact@co-routine.com</td>
+            </tr>
+            <tr>
+              <th>設立日</th>
+              <td>2016年11月22日</td>
+            </tr>
+            <tr>
+              <th>役員</th>
+              <td>代表取締役 東川諒央</td>
+            </tr>
+          </table>
         </div>
+        <!-- profile -->
+
+        <!-- publication -->
+        <div id="publication">
+          <h6 class="text-muted">電子広告</h6>
+          <p>只今掲載情報はありません</p>
+        </div>
+        <!-- publication -->
       </div>
-    </footer>
-    
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    </div>
   </body>
 </html>
