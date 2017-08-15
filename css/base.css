@@ -44,7 +44,7 @@ nav.top-nav {
 
 div.container.product {
     margin: 3rem 0;
-    height: 120px;
+    height: auto;
     border: solid 1px #d0d0d0;
     background-color: #fdfdfd;
 }
