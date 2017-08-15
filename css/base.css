@@ -1,9 +1,13 @@
+body h2,
+body h3 {
+    font-size: 1.5rem;
+}
+
 nav.top-nav {
     height: 122px;
     line-height: 122px;
     font-size: 48px;
 }
-
 .nav-wrapper-container {
     margin: auto;
     width: 95%;
@@ -69,10 +73,14 @@ div.container.product {
     border: solid 1px #d0d0d0;
     background-color: #fdfdfd;
 }
-div.container.product > h4 {
+div.container.product > h3 {
     text-align: center;
     color: #909090;
     border-bottom: solid 1px #b0b0b0;
+}
+
+div#publication h3 {
+    font-size: 1rem;
 }
 
 footer {
