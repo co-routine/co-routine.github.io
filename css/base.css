@@ -31,7 +31,19 @@ nav.top-nav {
 }
 .contents ul li {
     list-style-type: circle;
+    margin: 0 0 5px 0;
 }
+
+.contents ul li.square {
+    list-style-type: square;
+    margin: 0 0 0 0;
+}
+
+.contents ul li dl,
+.contents ul li dl dd {
+    margin: 0 0 0 0;
+}
+
 .contents p {
     padding-left: 0.75rem;
 }
