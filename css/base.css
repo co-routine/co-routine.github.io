@@ -31,7 +31,19 @@ nav.top-nav {
 }
 .contents ul li {
     list-style-type: circle;
+    margin: 0 0 5px 0;
 }
+
+.contents ul li.square {
+    list-style-type: square;
+    margin: 0 0 0 0;
+}
+
+.contents ul li dl,
+.contents ul li dl dd {
+    margin: 0 0 0 0;
+}
+
 .contents p {
     padding-left: 0.75rem;
 }
@@ -40,6 +52,18 @@ nav.top-nav {
     margin-top: 130px;
     height: 60px;
     text-align: center;
+}
+
+div.container.product {
+    margin: 3rem 0;
+    height: auto;
+    border: solid 1px #d0d0d0;
+    background-color: #fdfdfd;
+}
+div.container.product > h4 {
+    text-align: center;
+    color: #909090;
+    border-bottom: solid 1px #b0b0b0;
 }
 
 footer {
