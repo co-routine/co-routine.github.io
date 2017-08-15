@@ -54,6 +54,15 @@ nav.top-nav {
     text-align: center;
 }
 
+div table caption {
+    padding: 0 0 0 0;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1;
+    caption-side: top;
+}
+
 div.container.product {
     margin: 3rem 0;
     height: auto;
