@@ -15,9 +15,7 @@ address {
 }
 
 /* User Style */
-.global-header {
-    margin-bottom: 3rem;
-}
+.global-header {}
 .global-header .inner {
     padding: 10px 0;
     border-bottom: solid 1px #d0d0d0;
@@ -38,6 +36,7 @@ address {
 }
 
 .contents {
+    margin-top: 6rem;
     font-size: 14px;
 }
 .contents .links {
@@ -59,7 +58,7 @@ address {
 }
 
 .section {
-    padding: 30px 0;
+    padding: 6rem 0;
 }
 
 .section:first-of-type {
@@ -78,13 +77,21 @@ address {
     margin-top: 1.4rem;
 }
 
+.profile {
+    background-color: #d9d9d9;
+}
+
 .product {
-    margin: 3rem 0;
     padding-right: 15px;
     padding-left: 15px;
     border: solid 1px #d0d0d0;
     background-color: #fdfdfd;
 }
+
+.product + .product {
+    margin-top: 3rem;
+}
+
 .product-header {
     padding: 4px 0;
     border-bottom: solid 1px #d0d0d0;
