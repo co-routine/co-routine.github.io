@@ -1,0 +1,23 @@
+.c-btn {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    border: 1px solid $color-border-base;
+    padding: 18px 36px;
+    line-height: 1;
+    text-decoration: none;
+    font-size: $font-base-size;
+    color: $font-base-color;
+    transition: 0.2s $ease-out-quart 0s;
+
+    @include mq('medium') {
+      padding: 14px 32px;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-base;
+    }
+  }
+}

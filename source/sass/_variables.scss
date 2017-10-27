@@ -1,13 +1,19 @@
 // Size
-$document-width--small: 300px;
+$document-width--small: 375px;
 $document-width--medium: 768px;
 $document-width--large: 1000px;
 $document-width--xlarge: 1200px;
 
-// Color
-$color-primary: #000000;
-$color-secondary: #ffffff;
+$base-margin: 40px;
 
+// Color
+$color-primary: #252525;
+$color-secondary: #e9e9e9;
+$color-base: #ffffff;
+$color-border-base: $color-primary;
+
+$font-base-size: 16px;
+$font-base-color: $color-primary;
 
 // Breakpoints
 $breakpoints: (

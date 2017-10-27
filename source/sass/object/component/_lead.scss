@@ -1,0 +1,12 @@
+.c-lead {
+  line-height: 1.8;
+  font-size: 16px;
+
+  @include mq('medium') {
+    font-size: 15px;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

@@ -1,15 +1,13 @@
-header.global-header
-  .container
-    .inner.clearfix
-      .brand
-        h3.text-muted.navbar-brand #{siteName}
-      nav.global-nav
-        ul.nav
-          li.nav-item
-            a.nav-width(href='/about/') 会社概要
-          li.nav-item
-            a.nav-width(href='/service/') 事業内容
-          //
-            <li class="nav-item">
-            <a class="nav-width" href="">ブログ</a>
-            </li>
+header.c-global-header
+  .c-container
+    .c-global-header__inner
+      .c-brand
+        h1.c-brand__text #{siteName}
+      nav.c-global-nav
+        ul.c-global-nav__list
+          li.c-global-nav__list__item
+            a.c-link(href='/about/') 会社概要
+          li.c-global-nav__list__item
+            a.c-link(href='/service/') 事業内容
+      .c-contact-btn
+        a.c-btn.p-contact-btn(href="/contact/") お問い合わせ
