@@ -1,34 +1,43 @@
-body h2,
-body h3 {
-    font-size: 1.5rem;
+/* User Reset */
+html,
+body {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #252525;
 }
 
-nav.top-nav {
-    height: 122px;
-    line-height: 122px;
-    font-size: 48px;
-}
-.nav-wrapper-container {
-    margin: auto;
-    width: 95%;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
 }
 
-.header {
-    margin-bottom: 3rem;
+address {
+    margin-bottom: 0;
 }
-.header h3 {
-    width: 100%;
-    border-bottom: .05rem solid #d0d0d0;
+
+/* User Style */
+.global-header {}
+.global-header .inner {
+    padding: 10px 0;
+    border-bottom: solid 1px #d0d0d0;
 }
-.header nav {
-    font-size: small;
+.brand {
+    float: left;
 }
-.header nav ul li a.nav-width {
+.brand .navbar-brand {
+    margin: 0;
+}
+.global-nav {
+    margin-top: 0.4rem;
+    float: right;
+}
+.global-nav .nav-width {
+    font-size: 14px;
     padding: 0 0.5rem 0 0.5rem;
 }
 
 .contents {
-    font-size: small;
+    margin-top: 6rem;
+    font-size: 14px;
 }
 .contents .links {
     padding: 2rem 0 2rem 0;
@@ -48,43 +57,74 @@ nav.top-nav {
     margin: 0 0 0 0;
 }
 
-.contents p {
-    padding-left: 0.75rem;
+.section {
+    padding: 6rem 0;
 }
 
-.hero {
-    margin-top: 130px;
-    height: 60px;
-    text-align: center;
+.section:first-of-type {
+    padding-top: 0;
 }
 
-div table caption {
-    padding: 0 0 0 0;
-    margin: 0 0 8px 0;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.1;
-    caption-side: top;
+.section + .section:last-of-type {
+    padding-bottom: 0;
 }
 
-div.container.product {
-    margin: 3rem 0;
-    height: auto;
+.company-header .title,
+.profile-header .title {
+    font-size: 1.6rem;
+}
+
+.company-body,
+.profile-body,
+.company-information-body,
+.publication-body {
+    margin-top: 1.4rem;
+}
+
+.profile {
+    background-color: #d9d9d9;
+}
+
+.product {
+    padding-right: 15px;
+    padding-left: 15px;
     border: solid 1px #d0d0d0;
     background-color: #fdfdfd;
 }
-div.container.product > h3 {
+
+.product + .product {
+    margin-top: 3rem;
+}
+
+.product-header {
+    padding: 4px 0;
+    border-bottom: solid 1px #d0d0d0;
+}
+
+.product .title {
+    line-height: 1.6;
     text-align: center;
     color: #909090;
-    border-bottom: solid 1px #b0b0b0;
 }
 
-div#publication h3 {
-    font-size: 1rem;
+.product-body {
+    padding: 10px 0;
 }
 
-footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+.company-information-header .title,
+.publication-header .title {
+    font-size: 1.4rem;
+}
+
+.global-footer {
+    margin-top: 40px;
+    padding: 20px 0 30px;
+}
+
+.global-footer .container {
+    border-top: solid 1px #d0d0d0;
+}
+
+.copy {
+    text-align: center;
 }
