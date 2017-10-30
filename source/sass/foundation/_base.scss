@@ -7,6 +7,15 @@ body {
   color: $font-base-color;
 }
 
+main {
+  display: block;
+}
+
 address {
   font-style: normal;
+}
+
+button {
+  appearance: none;
+  border: none;
 }

@@ -1,0 +1,23 @@
+.c-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: $color-primary;
+
+  &::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: $color-primary;
+    transition: 0.2s $ease-out-quart 0s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  small {
+    display: block;
+  }
+}

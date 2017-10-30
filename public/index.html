@@ -26,16 +26,27 @@
     <header class="c-global-header">
       <div class="c-container">
         <div class="c-global-header__inner">
-          <div class="c-brand">
-            <h1 class="c-brand__text">coroutine inc.</h1>
+          <div class="c-global-header__brand">
+            <h1 class="c-brand"><a href="/">coroutine inc.</a></h1>
           </div>
-          <nav class="c-global-nav">
-            <ul class="c-global-nav__list">
-              <li class="c-global-nav__list__item"><a class="c-link" href="/about/">会社概要</a></li>
-              <li class="c-global-nav__list__item"><a class="c-link" href="/service/">事業内容</a></li>
-            </ul>
-          </nav>
-          <div class="c-contact-btn"><a class="c-btn p-contact-btn" href="/contact/">お問い合わせ</a></div>
+          <div class="c-global-header__hamburger">
+            <button class="c-hamburger" data-j-hamburger><span></span></button>
+          </div>
+          <div class="c-global-header__content">
+            <div class="c-global-header__content__inner">
+              <div class="c-global-header__nav">
+                <nav class="c-global-nav">
+                  <ul class="c-global-nav__list">
+                    <li class="c-global-nav__list__item"><a class="c-link" href="/about/">About<small>会社概要</small></a></li>
+                    <li class="c-global-nav__list__item"><a class="c-link" href="/service/">Service<small>事業内容</small></a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="c-global-header__utill">
+                <div class="c-btn c-btn--gnav-contact"><a class="c-btn p-contact-btn" href="/contact/">お問い合わせ</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -141,5 +152,7 @@
         <p class="c-copy"><small>(c) 2017 coroutine inc.</small></p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/dist/javascript/application.js"></script>
   </body>
 </html>
