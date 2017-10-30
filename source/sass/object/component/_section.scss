@@ -1,0 +1,30 @@
+.c-section {
+  padding: 120px 0;
+
+  @include mq('medium') {
+    padding: 70px 0;
+  }
+
+  @include mq('small') {
+    padding: 50px 0;
+  }
+
+  &--bg-accent {
+    background-color: $color-secondary;
+  }
+
+  &__header {}
+
+  &__body,
+  &__footer {
+    margin-top: $base-margin * 1.6;
+
+    @include mq('medium') {
+      margin-top: $base-margin * 1.2;
+    }
+
+    @include mq('small') {
+      margin-top: $base-margin;
+    }
+  }
+}

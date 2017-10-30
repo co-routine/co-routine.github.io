@@ -1,0 +1,70 @@
+extends template/_base
+block config
+  include _config
+block title
+  title #{siteName} | #{siteTitleDescription}
+block meta
+  meta(name='description', content=siteDescription)
+  meta(property='og:description', content=siteDescription)
+  meta(property='og:title', content= siteName + ' | ' + siteTitleDescription)
+  meta(property='og:url', content=baseURL)
+
+block body
+  .c-container
+    .c-hero
+      .c-img
+        img(src="https://placehold.jp/1200x600.png")
+  section.c-section.p-top-about
+    .c-container.c-container--small
+      header.c-section__header
+        h2.c-h.c-h--centered About
+        p.c-h.c-h--sub.c-h--centered coroutineについて
+      .c-section__body
+        p.c-lead.c-lead--centered
+          | 株式会社 coroutine では技術教育とインターネットを活用したビジネスのサポートを事業としています。<br>
+          | 代表の東川が大学での教育者として従事した後、インターネットサービスの運営事業の企業に参画し、得た実務経験から、自身に出来る事は技術者の教育である事と考えた事から会社の起ち上げに至りました。<br>
+          | また、サーバサイドのアプリケーション開発、クラウドインフラの構築・運用、プロジェクトマネジメントの経験から、お客様の関心の強い事業、方面へのお手伝いが出来ればとも思っています。
+      footer.c-section__footer
+        .c-btn
+          a(href="/about/") もっと詳しくみる
+
+  section.c-section.c-section--bg-accent
+    .c-container
+      header.c-section__header
+        h2.c-h.c-h--centered Service
+        p.c-h.c-h--sub.c-h--centered coroutineにできること
+      .c-section__body
+        ul.c-service-list
+          li.c-service-list__item
+            .c-service-info
+              header.c-service-info__header
+                h3.c-h.c-service-info__header__title 技術教育
+              .c-service-info__body
+                p.c-lead 今の開発の状況を変えたい事業者様向けにご意向をヒアリングし、教育方針の作成や On/Off JT を用いた教育カリキュラムの作成と実施のお手伝いをさせて頂きます。
+
+          li.c-service-list__item
+            .c-service-info
+              header.c-service-info__header
+                h3.c-h.c-service-info__header__title 技術顧問
+              .c-service-info__body
+                p.c-lead お客様が抱える、技術的な解決したい問題を顧問として一緒に解決していきます。
+
+        ul.c-service-list
+          li.c-service-list__item
+            .c-service-info
+              header.c-service-info__header
+                h3.c-h.c-service-info__header__title IT コンサルティング・<br>開発マネジメント
+              .c-service-info__body
+                p.c-lead 観測 (分析) と問題の解決をお客様と一緒に行なう事で、対処療法的解決ではなく問題の根本からの解決を目指します。
+          li.c-service-list__item
+            .c-service-info
+              header.c-service-info__header
+                h3.c-h.c-service-info__header__title 受託開発
+              .c-service-info__body
+                p.c-lead
+                 | 単純に開発発注を行なうだけでなく、技術が成熟するまでのパートナーとして稼動するなどお客様ごとに柔軟な対応を想定しているため、まずはご相談頂ければと思います。
+      footer.c-section__footer
+        .c-btn
+          a(href="/service/") もっと詳しくみる
+
+  include ./template/_contact
