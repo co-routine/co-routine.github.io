@@ -1,5 +1,5 @@
 .c-section {
-  padding: 120px 0;
+  padding: 90px 0;
 
   @include mq('medium') {
     padding: 70px 0;
@@ -13,18 +13,14 @@
     background-color: $color-secondary;
   }
 
+  &--lower {
+    padding-bottom: 0;
+  }
+
   &__header {}
 
   &__body,
   &__footer {
-    margin-top: $base-margin * 1.6;
-
-    @include mq('medium') {
-      margin-top: $base-margin * 1.2;
-    }
-
-    @include mq('small') {
-      margin-top: $base-margin;
-    }
+    margin-top: $base-margin;
   }
 }
