@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp server",
     "pug": "gulp pug",
     "sass": "gulp sass",
     "js": "webpack --progress --colors",
@@ -18,6 +18,7 @@
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.24.0",
+    "browser-sync": "^2.18.13",
     "cssuseragent": "^2.1.31",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
