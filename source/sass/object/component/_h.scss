@@ -11,15 +11,27 @@
   }
 
   &--sub {
-    font-size: 21px;
+    font-size: 18px;
     color: lighten($font-base-color, 20%);
 
     @include mq('medium') {
-      font-size: 18px;
+      font-size: 16px;
+    }
+
+    // @include mq('small') {
+    //   font-size: 16px;
+    // }
+  }
+
+  &--medium {
+    font-size: 36px;
+
+    @include mq('medium') {
+      font-size: 26px;
     }
 
     @include mq('small') {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 

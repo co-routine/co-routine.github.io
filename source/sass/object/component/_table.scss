@@ -1,0 +1,24 @@
+.c-table {
+  width: 100%;
+
+  tr {
+    & + tr {
+      border-top: 1px solid $color-border-base;
+    }
+  }
+
+  th,
+  td {
+    padding: 1em 0;
+  }
+
+  th {
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  td {
+    width: 70%;
+  }
+}
