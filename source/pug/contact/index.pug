@@ -1,0 +1,27 @@
+extends ../_base
+block config
+  include ../_config
+block title
+  title お問い合わせ | #{siteName}
+block meta
+  meta(name='description', content='お問い合わせのページ。' + siteDescription)
+  meta(property='og:description', content='お問い合わせのページ。' + siteDescription)
+  meta(property='og:title', content='お問い合わせ | ' + siteName)
+  meta(property='og:url', content=baseURL + '/contact/')
+
+block body
+  section.c-section
+    .c-container.c-container--small
+      header.c-section__header
+        h2.c-h.c-h--centered Contact
+        p.c-h.c-h--sub.c-h--centered お問い合わせ
+      .c-section__body
+        p.c-lead.c-lead--centered
+          | 株式会社 coroutine では、技術教育や技術顧問、開発のコンサルティングなどを通して<br>お客様のビジネスのサポートを行っております。
+          br
+          | まずは一度お気軽にご相談ください。
+      .c-section__footer
+        .c-btn
+          a(href="mailto:contact@co-routine.com?subject=問い合わせ&amp;body=お問い合わせ内容を入力ください") coroutineに相談・依頼をする
+        p.c-note.c-note--centered
+          small ※クリックするとメーラーが起動します。
