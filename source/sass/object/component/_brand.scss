@@ -1,5 +1,11 @@
 .c-brand {
+  margin-top: 0.2em;
   line-height: 1;
+
+  @include mq('medium') {
+    margin-top: 0;
+  }
+
   a {
     text-decoration: none;
     font-size: 32px;

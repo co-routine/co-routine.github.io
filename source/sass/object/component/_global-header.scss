@@ -4,6 +4,10 @@
   &__inner {
     @extend %clearfix;
     padding: 20px 0;
+
+    @include mq('medium') {
+      padding: 10px 0;
+    }
   }
 
   &__brand {
