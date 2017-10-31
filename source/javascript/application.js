@@ -1,8 +1,5 @@
-import sample from './_sample';
+import Gnav from './_global-nav';
 
-sample();
-
-let newFunc = (val) => {
-  console.log(val)
+if ($('[data-j-hamburger]').length) {
+  new Gnav();
 }
-newFunc('piyo');

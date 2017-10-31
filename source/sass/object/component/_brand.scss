@@ -1,0 +1,12 @@
+.c-brand {
+  line-height: 1;
+  a {
+    text-decoration: none;
+    font-size: 32px;
+    color: $color-primary;
+
+    @include mq('medium') {
+      font-size: 1.4rem;
+    }
+  }
+}

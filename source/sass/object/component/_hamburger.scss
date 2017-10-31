@@ -1,0 +1,18 @@
+%hamburger-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: $color-primary;
+  margin: 5px 0;
+}
+
+.c-hamburger {
+  span {
+    @extend %hamburger-line;
+  }
+  &::before,
+  &::after {
+    content: '';
+    @extend %hamburger-line;
+  }
+}
