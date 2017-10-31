@@ -15,11 +15,16 @@
 
   &--lower {
     padding-bottom: 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 
-  &__header {}
+  &__header + &__body {
+    margin-top: $base-margin;
+  }
 
-  &__body,
   &__footer {
     margin-top: $base-margin;
   }
