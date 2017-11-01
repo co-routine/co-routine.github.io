@@ -29,40 +29,57 @@ block body
           a(href="/about/") もっと詳しくみる
 
   section.c-section.c-section--bg-accent
-    .c-container
+    .c-container.c-container--medium
       header.c-section__header
         h2.c-h.c-h--centered Service
         p.c-h.c-h--sub.c-h--centered coroutineにできること
       .c-section__body
-        ul.c-service-list
-          li.c-service-list__item
-            .c-service-info
-              header.c-service-info__header
-                h3.c-h.c-service-info__header__title 技術教育
-              .c-service-info__body
-                p.c-lead 今の開発の状況を変えたい事業者様向けにご意向をヒアリングし、教育方針の作成や On/Off JT を用いた教育カリキュラムの作成と実施のお手伝いをさせて頂きます。
+        ul.c-img-list
+          li.c-img-list__item
+            a.c-card(href="/service/#anc-training")
+              .c-card-cover
+                .c-card-cover__content
+                  .c-card-cover__content__inner
+                    h3.c-h.c-h--small.c-card-cover__title 技術教育
+                    p.c-lead.c-card-cover__lead: small 今の開発の状況を変えたい事業者様向けにご意向をヒアリングし、教育方針の作成や On/Off JT を用いた教育カリキュラムの作成と実施のお手伝いをさせて頂きます。
+              .c-card__bg
+                .c-img.c-img--scale
+                  img(src=image_path +  "img-service--training.jpg", alt="")
 
-          li.c-service-list__item
-            .c-service-info
-              header.c-service-info__header
-                h3.c-h.c-service-info__header__title 技術顧問
-              .c-service-info__body
-                p.c-lead お客様が抱える、技術的な解決したい問題を顧問として一緒に解決していきます。
+          li.c-img-list__item
+            a.c-card(href="/service/#anc-advisor")
+              .c-card-cover
+                .c-card-cover__content
+                  .c-card-cover__content__inner
+                    h3.c-h.c-h--small.c-card-cover__title 技術顧問
+                    p.c-lead.c-card-cover__lead: small お客様が抱える、技術的な解決したい問題を顧問として一緒に解決していきます。
+              .c-card__bg
+                .c-img.c-img--scale
+                  img(src=image_path +  "img-service--advisor.jpg", alt="")
 
-        ul.c-service-list
-          li.c-service-list__item
-            .c-service-info
-              header.c-service-info__header
-                h3.c-h.c-service-info__header__title IT コンサルティング・<br>開発マネジメント
-              .c-service-info__body
-                p.c-lead 観測 (分析) と問題の解決をお客様と一緒に行なう事で、対処療法的解決ではなく問題の根本からの解決を目指します。
-          li.c-service-list__item
-            .c-service-info
-              header.c-service-info__header
-                h3.c-h.c-service-info__header__title 受託開発
-              .c-service-info__body
-                p.c-lead
-                 | 単純に開発発注を行なうだけでなく、技術が成熟するまでのパートナーとして稼動するなどお客様ごとに柔軟な対応を想定しているため、まずはご相談頂ければと思います。
+        ul.c-img-list
+          li.c-img-list__item
+            a.c-card(href="/service/#anc-consulting")
+              .c-card-cover
+                .c-card-cover__content
+                  .c-card-cover__content__inner
+                    h3.c-h.c-h--small.c-card-cover__title IT コンサルティング・<br>開発マネジメント
+                    p.c-lead.c-card-cover__lead: small 観測 (分析) と問題の解決をお客様と一緒に行なう事で、対処療法的解決ではなく問題の根本からの解決を目指します。
+              .c-card__bg
+                .c-img.c-img--scale
+                  img(src=image_path +  "img-service--consulting.jpg", alt="")
+
+          li.c-img-list__item
+            a.c-card(href="/service/#anc-development")
+              .c-card-cover
+                .c-card-cover__content
+                  .c-card-cover__content__inner
+                    h3.c-h.c-h--small.c-card-cover__title 受託開発
+                    p.c-lead.c-card-cover__lead: small 単純に開発発注を行なうだけでなく、技術が成熟するまでのパートナーとして稼動するなどお客様ごとに柔軟な対応を想定しているため、まずはご相談頂ければと思います。
+              .c-card__bg
+                .c-img.c-img--scale
+                  img(src=image_path +  "img-service--development.jpg", alt="")
+
       footer.c-section__footer
         .c-btn.c-btn--detail
           a(href="/service/") もっと詳しくみる
