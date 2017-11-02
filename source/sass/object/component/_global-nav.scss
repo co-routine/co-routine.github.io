@@ -28,6 +28,7 @@ body.is-fixed {  // Scroll Lock
       .c-link {
         padding: 0 10px;
         text-align: center;
+        @include font-en;
         font-size: 18px;
 
         @include mq('medium') {

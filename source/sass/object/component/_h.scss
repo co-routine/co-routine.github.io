@@ -50,4 +50,8 @@
   &--centered {
     text-align: center;
   }
+
+  &--en {
+    @include font-en;
+  }
 }
