@@ -35,6 +35,18 @@
     }
   }
 
+  &--small {
+    font-size: 30px;
+
+    @include mq('medium') {
+      font-size: 20px;
+    }
+
+    @include mq('small') {
+      font-size: 16px;
+    }
+  }
+
   &--centered {
     text-align: center;
   }

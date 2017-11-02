@@ -27,4 +27,27 @@
       font-size: 1em;
     }
   }
+
+  &--detail {
+    a::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 10px;
+      margin-top: -4px;
+      border-top: 2px solid $font-base-color;
+      border-right: 2px solid $font-base-color;
+      transform: rotate3d(0,0,1,45deg) translate3d(5px,-5px,0);
+      transition: 0.2s $ease-out-quart 0s;
+    }
+
+    a:hover {
+      &::after {
+        border-top: 2px solid $color-base;
+        border-right: 2px solid $color-base;
+        transform: rotate3d(0,0,1,45deg) translate3d(10px,-10px,0);
+      }
+    }
+  }
 }

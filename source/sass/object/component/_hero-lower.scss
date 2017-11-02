@@ -1,0 +1,16 @@
+.c-hero-lower {
+  display: table;
+  width: 100%;
+  background-color: $color-primary;
+
+  &__inner {
+    display: table-cell;
+    width: 100%;
+    padding: 2rem 0;
+    vertical-align: middle;
+  }
+
+  .c-h {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,57 @@
+.c-card {
+  display: block;
+  position: relative;
+
+  &-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    &__content {
+      display: table;
+      width: 100%;
+      height: 100%;
+
+      &__inner {
+        display: table-cell;
+        width: inherit;
+        height: inherit;
+        vertical-align: middle;
+        text-align: center;
+        padding: 24px;
+
+        @include mq('small') {
+          padding: 12px;
+        }
+      }
+    }
+
+    &__title,
+    &__lead {
+      color: $color-base !important;
+    }
+
+    &__title {
+      font-weight: 400;
+    }
+  }
+
+  &__bg {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-primary, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.4s $ease-out-quart 0s;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+extends ../_base
+block config
+  include ../_config
+block title
+  title 事業内容 | #{siteName}
+block meta
+  meta(name='description', content='事業内容のページ。' + siteDescription)
+  meta(property='og:description', content='事業内容のページ。' + siteDescription)
+  meta(property='og:title', content='事業内容 | ' + siteName)
+  meta(property='og:url', content=baseURL + '/service/')
+
+block body
+  header.c-hero-lower
+    .c-hero-lower__inner
+      h1.c-h.c-h--centered Service
+      p.c-h.c-h--sub.c-h--centered 事業内容
+  section.c-section
+    .c-section__body
+      //- p.c-lead.c-lead--centered
+      //-   | 株式会社 coroutine では技術教育とインターネットを活用したビジネスのサポートを事業としています。
+
+      section.c-section.c-section--lower
+        .c-container.c-container--small
+          header.c-section__header
+            h2.c-h.c-h--medium.c-h--centered coroutineの得意なこと
+          .c-section__body
+            ul
+              li これから経験を積みたい技術者やプロジェクトマネージャーの教育方針の策定と実施
+              li 開発の現場における現状の打開と戦略立案
+              li 日々習得した技術をもとにより最適な開発
+
+      section.c-section.c-section--lower
+        .c-container.c-container--medium
+          header.c-section__header
+            h2.c-h.c-h--medium.c-h--centered 事業内容
+          .c-section__body
+            ul.c-service-list
+              li.c-service-list__item#anc-training
+                .c-service-info
+                  header.c-service-info__header
+                    h3.c-h.c-h--small 技術教育
+                  .c-service-info__body
+                    p.c-lead
+                      | より効果のでる技術教育を行い、現在の状況を変えたい事業者様向けにご意向をヒアリングし、教育方針の作成や On/Off JT を用いた教育カリキュラムの作成と実施のお手伝いをさせて頂きます。
+                    p.c-lead
+                      | また、これから経験を積んで貰いたい技術者様、プロジェクトマネージャー様のご相談窓口としての対応も検討しています。
+                    aside.c-aside
+                      h4 こういった技術教育が得意です
+                      ul
+                        li 1 対 1 ~ 1 対 程度の少数 OJT 教育
+                        li サーバアプリケーション開発 (PHP, Ruby, Python)
+                        li Linux サーバインフラ構築・保守運用
+                        li プロジェクトマネジメント
+              li.c-service-list__item#anc-advisor
+                .c-service-info
+                  header.c-service-info__header
+                    h3.c-h.c-h--small 技術顧問
+                  .c-service-info__body
+                    p.c-lead ここに技術顧問としてやれること
+
+                    aside.c-aside
+                      h4 こういった支援をさせていただきます
+                      ul
+                        li 開発支援 (技術戦略, 開発品質, 開発効率化, 運用省力化)
+                        li 採用支援 (面接, 人事評価等)
+
+            ul.c-service-list
+              li.c-service-list__item#anc-consulting
+                .c-service-info
+                  header.c-service-info__header
+                    h3.c-h.c-h--small IT コンサルティング・<br>開発マネジメント
+                  .c-service-info__body
+                    p.c-lead
+                      | 業務を進める上で情報共有とチームマネジメントは必要不可欠とも言える程重要なウェイトを占めています。<br>
+                      | ここが上手く行かず、様々な部分に良くない影響が出るプロジェクトが多くありますが、このような問題は一目では見つける事は難しく、定点観測を行なう事でボトルネックとなる部分が表面化されてきます。<br>
+                      | 観測 (分析) と問題の解決をお客様と一緒に行なう事で、対処療法的解決ではなく問題の根本からの解決を目指します。
+                    aside.c-aside
+                      h4 以下のような提案が得意です
+                      ul
+                        li ワークフロー改善
+                        li IT 戦略による業務効率改善
+                        li 開発マネジメントおよびサポート
+              li.c-service-list__item#anc-development
+                .c-service-info
+                  header.c-service-info__header
+                    h3.c-h.c-h--small 受託開発
+                  .c-service-info__body
+                    p.c-lead
+                      | 弊社では、スマートフォンゲームのサーバサイドアプリケーション開発とその運用ツールの開発や、Webアプリケーション開発の実務実績があります。今後も案件に応じた柔軟な開発を行っていくため、様々な技術を貪欲に習得していきます。<br>
+                      | そのため、ご希望によっては「採用技術を更新したい」「人員の募集をかけても人が集まらない」などの問題を共有し、技術が成熟するまでのパートナーとして稼動する事も可能です。<br>
+                      | 単純に開発発注を行なうだけでなく、お客様ごとに柔軟な対応を想定しているため、まずはご相談頂ければと思います。
+                    aside.c-aside
+                      h4 採用実績技術
+                      ul
+                        li Python 2.7, 3.6 (Django 1.8, 1.11)
+                        li Ruby 2.2 (Ruby on Rails 4)
+                        li PHP 7 (Laravel 5.4)
+          .c-section__footer
+            p.c-note
+              small
+                | ※今までの案件の事例や、弊社で想定している例を出させて頂いています。<br>
+                | あくまでも一例の為、ご相談頂ければお客様の状況に合わせたプランをご提案させて頂く事も可能です。
+  include ../template/_contact

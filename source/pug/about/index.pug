@@ -10,12 +10,12 @@ block meta
   meta(property='og:url', content=baseURL + '/about/')
 
 block body
+  header.c-hero-lower
+    .c-hero-lower__inner
+      h1.c-h.c-h--centered About
+      p.c-h.c-h--sub.c-h--centered coroutineについて
   section.c-section
     .c-container.c-container--small
-      header.c-section__header
-        h2.c-h.c-h--centered About
-        p.c-h.c-h--sub.c-h--centered coroutineについて
-      .c-section__body
         p.c-lead.c-lead--centered
           | 株式会社 coroutine では技術教育とインターネットを活用したビジネスのサポートを事業としています。
         p.c-lead.c-lead--centered
@@ -28,7 +28,7 @@ block body
 
         section.c-section.c-section--lower
           header.c-section__header
-            h3.c-h.c-h--medium.c-h--centered Company Information
+            h2.c-h.c-h--medium.c-h--centered Company Information
             p.c-h.c-h--sub.c-h--centered 会社概要
           .c-section__body
             table.c-table
