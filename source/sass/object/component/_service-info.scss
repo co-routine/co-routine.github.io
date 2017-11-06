@@ -1,0 +1,23 @@
+.c-service-info {
+  &__header {
+    &__title {
+      font-size: 28px;
+
+      @include mq('medium') {
+        font-size: 24px;
+      }
+
+      @include mq('small') {
+        font-size: 21px;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 20px;
+
+    @include mq('medium') {
+      margin-top: 10px;
+    }
+  }
+}

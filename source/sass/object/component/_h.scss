@@ -1,0 +1,57 @@
+.c-h {
+  font-size: 48px;
+  color: $font-base-color;
+
+  @include mq('medium') {
+    font-size: 32px;
+  }
+
+  @include mq('small') {
+    font-size: 24px;
+  }
+
+  &--sub {
+    font-size: 18px;
+    color: lighten($font-base-color, 20%);
+
+    @include mq('medium') {
+      font-size: 16px;
+    }
+
+    // @include mq('small') {
+    //   font-size: 16px;
+    // }
+  }
+
+  &--medium {
+    font-size: 36px;
+
+    @include mq('medium') {
+      font-size: 26px;
+    }
+
+    @include mq('small') {
+      font-size: 18px;
+    }
+  }
+
+  &--small {
+    font-size: 30px;
+
+    @include mq('medium') {
+      font-size: 20px;
+    }
+
+    @include mq('small') {
+      font-size: 16px;
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--en {
+    @include font-en;
+  }
+}

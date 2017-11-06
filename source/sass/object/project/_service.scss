@@ -1,0 +1,8 @@
+.p-service {
+  &__service-list {
+    .c-bg-img::after {
+      content: '';
+      padding-top: percentage(200 / 534);
+    }
+  }
+}
