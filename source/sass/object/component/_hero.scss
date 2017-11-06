@@ -42,5 +42,9 @@
 
   &__title {
     font-size: 64px;
+
+    @include mq('small') {
+      font-size: 24px;
+    }
   }
 }
