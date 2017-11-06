@@ -11,6 +11,6 @@ export default class Hero {
 
     setTimeout(() => {
       this.$heroLead.addClass('is-show');
-    }, 100);
+    }, 70);
   }
 };
