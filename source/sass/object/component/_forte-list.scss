@@ -1,0 +1,25 @@
+.c-forte {
+  text-align: center;
+}
+
+.c-forte-list {
+  display: inline-block;
+  list-style-type: none;
+
+  &__item {
+    text-align: left;
+    font-size: 1.2rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      margin-top: -0.3em;
+      margin-right: 0.6em;
+      background: url(/dist/image/icon-check.svg) no-repeat;
+      background-size: cover;
+    }
+  }
+}
