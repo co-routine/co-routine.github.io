@@ -26,6 +26,10 @@
       .c-img--scale img {
         transform: scale(1.1);
       }
+
+      .c-bg-img--scale {
+        background-size: 110%;
+      }
     }
   }
 }
