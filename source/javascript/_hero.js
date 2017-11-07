@@ -3,7 +3,13 @@ export default class Hero {
     this.$heroTitle = $('.c-hero__title');
     this.$heroLead = $('.c-hero__lead');
 
-    this.showTexts();
+    $(window).on({
+      'load': () => {
+        setTimeout(() => {
+          this.showTexts();
+        }, 100);
+      }
+    })
   };
 
   showTexts() {
