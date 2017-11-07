@@ -9,6 +9,9 @@ block meta
   meta(property='og:title', content= siteName + ' | ' + siteTitleDescription)
   meta(property='og:url', content=baseURL)
 
+block breadcrumb
+  - pageLower = {}
+
 block body
   .c-container
     .c-hero

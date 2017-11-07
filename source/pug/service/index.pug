@@ -9,6 +9,9 @@ block meta
   meta(property='og:title', content='事業内容 | ' + siteName)
   meta(property='og:url', content=baseURL + '/service/')
 
+block breadcrumb
+  - pageLower = { page: {label: '事業内容', path: '/service/'} }
+
 block body
   header.c-hero-lower
     .c-hero-lower__inner
@@ -16,9 +19,6 @@ block body
       p.c-h.c-h--sub.c-h--centered 事業内容
   section.c-section
     .c-section__body
-      //- p.c-lead.c-lead--centered
-      //-   | 株式会社 coroutine では技術教育とインターネットを活用したビジネスのサポートを事業としています。
-
       section.c-section.c-section--lower
         .c-container.c-container--medium
           header.c-section__header
