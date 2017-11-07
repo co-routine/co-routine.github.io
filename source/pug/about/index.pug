@@ -9,6 +9,9 @@ block meta
   meta(property='og:title', content='会社概要 | ' + siteName)
   meta(property='og:url', content=baseURL + '/about/')
 
+block breadcrumb
+  - pageLower = { page: {label: '会社概要', path: '/about/'} }
+
 block body
   header.c-hero-lower
     .c-hero-lower__inner

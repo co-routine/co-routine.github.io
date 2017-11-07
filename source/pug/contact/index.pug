@@ -9,6 +9,9 @@ block meta
   meta(property='og:title', content='お問い合わせ | ' + siteName)
   meta(property='og:url', content=baseURL + '/contact/')
 
+block breadcrumb
+  - pageLower = { page: {label: 'お問い合わせ', path: '/contact/'} }
+
 block body
   header.c-hero-lower
     .c-hero-lower__inner

@@ -1,0 +1,21 @@
+block breadcrumb
+
+-
+  var basePage = {
+    top: {
+      label: 'トップページ',
+      path: '/'
+    }
+  }
+
+  // 下層ページのページ情報とのマージ
+  if (typeof(pageLower) !== undefined) {
+    var page = Object.assign(basePage, pageLower)
+  } else {
+    var page = basePage;
+  }
+
+nav.c-breadcrumbs
+  .c-container
+    each index in page
+      a(href=index.path) #{index.label}
