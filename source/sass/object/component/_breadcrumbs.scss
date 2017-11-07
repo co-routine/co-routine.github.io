@@ -1,0 +1,31 @@
+.c-breadcrumbs {
+  @include mq('small') {
+    display: none;
+  }
+
+  > * {
+    border-top: 1px solid $color-border-base;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+
+    & + a {
+      margin-left: .6rem;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $color-primary;
+        border-right: 2px solid $color-primary;
+        transform: rotate(45deg) translate3d(-3px, 0, 0);
+        margin-right: .6rem;
+      }
+    }
+  }
+}
