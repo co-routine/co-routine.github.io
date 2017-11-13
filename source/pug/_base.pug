@@ -19,7 +19,14 @@ html(lang='ja', prefix='og: http://ogp.me/ns#')
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-M7ZF2P4');
-    // End Google Tag Manager
+      // End Google Tag Manager
+    script(type='application/ld+json').
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "#{siteName}",
+        "url": "#{baseURL}"
+      }
   body
     // Google Tag Manager (noscript)
     noscript
