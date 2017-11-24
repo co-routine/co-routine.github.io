@@ -1,0 +1,180 @@
+extends ../_base
+block config
+  include ../_config
+block title
+  title 事業内容 | #{siteName}
+block meta
+  meta(name='description', content='事業内容のページ。技術教育や技術顧問、IT コンサルティング・開発マネジメント、システム開発など弊社の事業について紹介します。' + siteDescription)
+  meta(property='og:description', content='事業内容のページ。技術教育や技術顧問、IT コンサルティング・開発マネジメント、システム開発など弊社の事業について紹介します。' + siteDescription)
+  meta(property='og:title', content='事業内容 | ' + siteName)
+  meta(property='og:url', content=baseURL + '/service/rebuild-booster.html')
+
+block breadcrumb
+  - pageLower = { page: {label: 'Rebuild Booster', path: '/service/rebuild-booster.html'} }
+
+block body
+  header
+    h1.c-h.c-h--centered Rebuild Booster
+    p.c-lead.c-lead--centered あなたのチームを前進させませんか?
+  section.c-section
+    header.c-section__header
+      h2.c-h.c-h--medium.c-h--centered 社内チームでの開発、上手くいっていますか?
+    .c-section__body
+      .c-container.c-container--small
+        p.c-lead 社内チームでの開発が上手くいっていないあなた、こんな事を考えていませんか？
+        .c-voice
+          ul.c-voice__list
+            li.c-voice__list__item
+            li.c-voice__list__item 開発経験が浅いなぁ...
+            li.c-voice__list__item 情報共有ができていないような...
+            li.c-voice__list__item 全然人も足りない...
+            li.c-voice__list__item なんだか効率が悪い気が...
+            li.c-voice__list__item そもそもローンチできるのか...
+            li.c-voice__list__item 時間が全然足りない...
+            li.c-voice__list__item だって、こんなにたくさん、気になることがあるんですよ。
+            li.c-voice__list__item スキルが足りない...
+          .c-voice__fig
+            img(src="http://placehold.jp/150x150.png", alt="")
+        p Rebuild Boosterはそんな開発チームを前進させます
+
+  section.c-section
+    header.c-section__header
+      h2.c-h.c-h--medium.c-h--centered
+        | いくつものシステムを開発してきたメンバーが、<br>
+        | 御社の開発チームと一緒になってチームを作ります！
+    .c-section__body
+      .c-container.c-container--medium
+        p.c-lead.c-lead--centered
+          | 同じチームで開発を進めていくことで、<br>
+          | 今までのフローを見直し、開発のよりよい進め方や必要な技術を共有することにより、<br>
+          | 御社のチームを改善し、より高いクオリティでシステム開発ができるところまで前進させます。
+
+        section.c-section.c-section--lower
+          h3.c-h.c-h--medium.c-h--centered Rebuild Boosterはここがすごい
+          ul.c-feature-list
+            li.c-feature-list__item
+              header.c-feature__header
+                p.c-h.c-h--small システムの完成度とチーム力の向上が同時に行える
+              .c-feature__body
+                p.c-lead 通常はどちらかのみとなってしまうことが多いですが、Rebuild Boosterでは、 両者の達成を目標とします。
+            li.c-feature-list__item
+              header.c-feature__header
+                p.c-h.c-h--small ワークフローを改善し、より前進しやすい環境を整える
+              .c-feature__body
+                p.c-lead 現状をヒアリングし、足りない人員のアサインと残タスク・仕様の確認を行い 環境をよりよいものに変えます。また、現在のワークフローを見直し、よりゴー ルまでたどり着きやすいものにします。
+                p.c-note ※現状の把握や整備のため、加わってから最低1,2ヶ月かかります。
+            li.c-feature-list__item
+              header.c-feature__header
+                p.c-h.c-h--small チームの成長と共に、補助エンジンは切り離す
+              .c-feature__body
+                p.-lead チームが十分に成長し、問題が解決できたとき、Rebuild Booster は離れます。 もし更に前進する必要があり、私達が助けになれるのであればその際は再度お力になります。
+
+  aside.c-contact
+    .c-container.c-container--medium
+      a.c-btn(href="/contact/") お問い合わせ
+
+  section.c-section
+    header.c-section__header
+      h2.c-h.c-h--medium.c-h--centered こんなメンバーがお手伝いします。
+    .c-section__body
+      .c-container
+        section.c-member
+          h3.c-member__title 主要メンバー
+        ul.c-member-list
+          li.c-member-list__item
+            .c-member-info
+              .c-member-info__img
+                img(src="http://placehold.jp/240x240.png", alt="")
+              .c-member-info__desc
+                p.c-member-info__desc__name 1号
+                p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
+                p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
+          li.c-member-list__item
+            .c-member-info
+              .c-member-info__img
+                img(src="http://placehold.jp/240x240.png", alt="")
+              .c-member-info__desc
+                p.c-member-info__desc__name 2号
+                p 最近プライベートも充実してきた、ハッピーなエンジニア。
+                p 技術コミュニティを主催するなど、コミュニケーションにたけている
+          li.c-member-list__item
+            .c-member-info
+              .c-member-info__img
+                img(src="http://placehold.jp/240x240.png", alt="")
+              .c-member-info__desc
+                p.c-member-info__desc__name 3号
+                p いつもニコニコしているがプライドが高い(だろう)エンジニア。
+                p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
+          li.c-member-list__item
+            .c-member-info
+              .c-member-info__img
+                img(src="http://placehold.jp/240x240.png", alt="")
+              .c-member-info__desc
+                p.c-member-info__desc__name 1号
+                p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
+                p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
+
+        aside.c-member
+          h3.c-member__title 特務員
+          ul.c-member-list.c-member-list--small
+            li.c-member-list__item 企画・デザイン
+            li.c-member-list__item プロデュース
+            li.c-member-list__item フロント・プログラム
+            li.c-member-list__item 会計・法務
+            li.c-member-list__item マーケ・分析
+
+  section.c-section
+    header.c-section__header
+      h2.c-h.c-h--medium.c-h--centered ご契約の流れとサービス料金
+    .c-section__body
+      p.c-lead 分析と実行の2つフェーズがあり、それぞれのご契約になります。
+      section
+        h3.c-h.c-h--small 分析フェーズ: Booster1(2,3か月)
+        ol.c-step-list
+          li.c-step-list__item
+            .c-step__body
+              p.c-step__title
+                span STEP1
+              | ヒアリング
+              p
+                | 御社のプロジェクトマネージャー(意思決定者の方)より該当案件の概要、予算規模(残予算)、スケジュールなどをヒアリングします。
+                | 情報を元に弊社で1,2名の メンバーを選定します。※案 件規模により人数は違います。
+              p.c-note ※遠隔地の場合、別途交通費実費
+            footer.c-step__footer
+              p ご相談 ¥0/月
+          li.c-step-list__item
+            .c-step__body
+              p.c-step__title
+                span STEP2
+              | 該当案件の分析
+              p 御社にて、ヒアリングから得た情報を元に、開発員の方々から各種ドキュメント群やコミュニケーション手段、人員スキルなどの該当案件の分析を行います。
+              p 問題点のレポートやリスケジュール、追加予算の有無、ローンチのタイミングなどをご提出します。引き続き、本サービスをご利用いただけるかは、このSTEP2でご判断頂きます。
+              p.c-note ※料金は税抜価格
+            footer.c-step__footer
+              p ご契約 ¥750,000/月
+
+      section
+        h3.c-h.c-h--small 実行フェーズ: Booster2(3,4か月~)
+        ol.c-step-list
+          li.c-step-list__item
+            .c-step__body
+              p.c-step__title
+                span STEP3
+              | 改善策の実行
+              p 該当案件の分析を元に、マネジメント方法の確立や開発要件にあった人員を外部調達し、実際の開発をサポートいたします。
+              p プロジェクト実践型の社内トレーニングを兼ねているので、御社の開発員の方々は、スキルアップのスピードがあがってきます。
+              p.c-note ※遠隔地の場合、別途交通費実費
+            footer.c-step__footer
+              p ¥1,500,000~ /月
+          li.c-step-list__item
+            .c-step__body
+              p.c-step__title
+                span STEP4
+              | 完了と撤収
+              p チームの成長が十分にでき、ミッションが果たせたあとは、我々は撤収します。
+              p 一時的にチーム力が落ちたようにみえます。あまりにも極端におちるなど問題があるようでしたら、必要な手当てを行います。新たなミッションとして我々は役割を果たします。
+              p.c-note ※遠隔地の場合、別途交通費実費
+            footer.c-step__footer
+              p ご相談 ¥0/月
+
+  include ../template/_contact
