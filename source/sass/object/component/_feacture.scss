@@ -1,5 +1,18 @@
 .c-feature {
-  &__header {}
+  &__header {
+    position: relative;
+    z-index: 2;
+
+    &__num {
+      display: block;
+      position: absolute;
+      left: -0.2em;
+      top: -0.6em;
+      font-weight: 800;
+      font-size: 60px;
+      color: rgba($font-base-color, 0.15);
+    }
+  }
 
   &__body {
     margin-top: 1.6em;
