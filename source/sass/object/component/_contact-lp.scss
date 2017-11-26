@@ -1,0 +1,16 @@
+.c-contact-lp {
+  &__body {}
+
+  &__btn {
+    text-align: center;
+
+    .c-btn {
+      display: inline-block;
+
+      a {
+        width: 100%;
+        line-height: 1.4;
+      }
+    }
+  }
+}
