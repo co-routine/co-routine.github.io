@@ -18,6 +18,10 @@
     max-width: $document-width--small;
   }
 
+  &--medium {
+    max-width: 1020px;
+  }
+
   &--small {
     max-width: 800px;
   }

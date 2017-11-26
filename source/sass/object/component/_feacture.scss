@@ -4,4 +4,18 @@
   &__body {
     margin-top: 1.6em;
   }
+
+  &__title.c-h {
+    font-size: 23px;
+  }
+
+  &__img {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & + * {
+      margin-top: 2em;
+    }
+  }
 }

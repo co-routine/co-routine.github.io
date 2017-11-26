@@ -15,7 +15,7 @@ block breadcrumb
 block body
   header
     h1.c-h.c-h--centered Rebuild Booster
-    p.c-lead.c-lead--centered あなたのチームを前進させませんか?
+    p.c-lead.c-lead--centered あなたの開発チームを前進させませんか?
   section.c-section
     header.c-section__header
       h2.c-h.c-h--medium.c-h--centered 社内チームでの開発、上手くいっていますか?
@@ -24,7 +24,6 @@ block body
         p.c-lead 社内チームでの開発が上手くいっていないあなた、こんな事を考えていませんか？
         .c-voice
           ul.c-voice__list
-            li.c-voice__list__item
             li.c-voice__list__item 開発経験が浅いなぁ...
             li.c-voice__list__item 情報共有ができていないような...
             li.c-voice__list__item 全然人も足りない...
@@ -46,28 +45,39 @@ block body
       .c-container.c-container--medium
         p.c-lead.c-lead--centered
           | 同じチームで開発を進めていくことで、<br>
-          | 今までのフローを見直し、開発のよりよい進め方や必要な技術を共有することにより、<br>
-          | 御社のチームを改善し、より高いクオリティでシステム開発ができるところまで前進させます。
+          | 今までのフローを見直し、開発のよりよい進め方や必要な技術を共有します。<br>
+          | これにより御社のチームを改善し、より高いクオリティでシステム開発ができるところまで前進させます。
 
         section.c-section.c-section--lower
           h3.c-h.c-h--medium.c-h--centered Rebuild Boosterはここがすごい
           ul.c-feature-list
             li.c-feature-list__item
               header.c-feature__header
-                p.c-h.c-h--small システムの完成度とチーム力の向上が同時に行える
+                p.c-h.c-feature__title システムの完成度とチーム力の向上が同時に行える
               .c-feature__body
-                p.c-lead 通常はどちらかのみとなってしまうことが多いですが、Rebuild Boosterでは、 両者の達成を目標とします。
+                .c-feature__img
+                  .c-img
+                    img(src=image_path + "rebuild-booster/icon-up.svg", alt="")
+                p.c-lead 通常はどちらかのみとなってしまうことが多いですが、Rebuild Boosterでは、両者の達成を目標とします。
             li.c-feature-list__item
               header.c-feature__header
-                p.c-h.c-h--small ワークフローを改善し、より前進しやすい環境を整える
+                p.c-h.c-feature__title ワークフローを改善し、より前進しやすい環境を整える
               .c-feature__body
-                p.c-lead 現状をヒアリングし、足りない人員のアサインと残タスク・仕様の確認を行い 環境をよりよいものに変えます。また、現在のワークフローを見直し、よりゴー ルまでたどり着きやすいものにします。
+                .c-feature__img
+                  .c-img
+                    img(src=image_path + "rebuild-booster/icon-reload.svg", alt="")
+                p.c-lead 現状をヒアリングし、足りない人員のアサインと残タスク・仕様の確認を行い環境をよりよいものに変えます。
+                p.c-lead また、現在のワークフローを見直し、よりゴー ルまでたどり着きやすいものにします。
                 p.c-note ※現状の把握や整備のため、加わってから最低1,2ヶ月かかります。
             li.c-feature-list__item
               header.c-feature__header
-                p.c-h.c-h--small チームの成長と共に、補助エンジンは切り離す
+                p.c-h.c-feature__title チームの成長と共に、補助エンジンは切り離す
               .c-feature__body
-                p.-lead チームが十分に成長し、問題が解決できたとき、Rebuild Booster は離れます。 もし更に前進する必要があり、私達が助けになれるのであればその際は再度お力になります。
+                .c-feature__img
+                  .c-img
+                    img(src=image_path + "rebuild-booster/icon-rocket.svg", alt="")
+                p.c-lead チームが十分に成長し、問題が解決できたとき、Rebuild Booster は離れます。
+                p.c-lead もし更に前進する必要があり、私達が助けになれるのであればその際は再度お力になります。
 
   aside.c-contact
     .c-container.c-container--medium
@@ -77,51 +87,57 @@ block body
     header.c-section__header
       h2.c-h.c-h--medium.c-h--centered こんなメンバーがお手伝いします。
     .c-section__body
-      .c-container
+      .c-container.c-container--medium
         section.c-member
-          h3.c-member__title 主要メンバー
-        ul.c-member-list
-          li.c-member-list__item
-            .c-member-info
-              .c-member-info__img
-                img(src="http://placehold.jp/240x240.png", alt="")
-              .c-member-info__desc
-                p.c-member-info__desc__name 1号
-                p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
-                p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
-          li.c-member-list__item
-            .c-member-info
-              .c-member-info__img
-                img(src="http://placehold.jp/240x240.png", alt="")
-              .c-member-info__desc
-                p.c-member-info__desc__name 2号
-                p 最近プライベートも充実してきた、ハッピーなエンジニア。
-                p 技術コミュニティを主催するなど、コミュニケーションにたけている
-          li.c-member-list__item
-            .c-member-info
-              .c-member-info__img
-                img(src="http://placehold.jp/240x240.png", alt="")
-              .c-member-info__desc
-                p.c-member-info__desc__name 3号
-                p いつもニコニコしているがプライドが高い(だろう)エンジニア。
-                p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
-          li.c-member-list__item
-            .c-member-info
-              .c-member-info__img
-                img(src="http://placehold.jp/240x240.png", alt="")
-              .c-member-info__desc
-                p.c-member-info__desc__name 1号
-                p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
-                p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
+          header.c-member__header
+            h3.c-h.c-h--centered.c-member__title 主要メンバー
+          .c-member__body
+            ul.c-member-list
+              li.c-member-list__item
+                .c-member-info
+                  .c-member-info__img
+                    img(src="http://placehold.jp/240x240.png", alt="")
+                  .c-member-info__desc
+                    p.c-member-info__desc__name 1号
+                    p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
+                    p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
+              li.c-member-list__item
+                .c-member-info
+                  .c-member-info__img
+                    img(src="http://placehold.jp/240x240.png", alt="")
+                  .c-member-info__desc
+                    p.c-member-info__desc__name 2号
+                    p 最近プライベートも充実してきた、ハッピーなエンジニア。
+                    p 技術コミュニティの運営に関わるなど、コミュニケーションにたけている
+            ul.c-member-list
+              li.c-member-list__item
+                .c-member-info
+                  .c-member-info__img
+                    img(src="http://placehold.jp/240x240.png", alt="")
+                  .c-member-info__desc
+                    p.c-member-info__desc__name 3号
+                    p いつもニコニコしているがプライドが高い(だろう)エンジニア。
+                    p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
+              li.c-member-list__item
+                .c-member-info
+                  .c-member-info__img
+                    img(src="http://placehold.jp/240x240.png", alt="")
+                  .c-member-info__desc
+                    p.c-member-info__desc__name 1号
+                    p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
+                    p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
 
-        aside.c-member
-          h3.c-member__title 特務員
-          ul.c-member-list.c-member-list--small
-            li.c-member-list__item 企画・デザイン
-            li.c-member-list__item プロデュース
-            li.c-member-list__item フロント・プログラム
-            li.c-member-list__item 会計・法務
-            li.c-member-list__item マーケ・分析
+        aside.c-member.c-member--other
+          header.c-member__header
+            h3.c-h.c-h--centered.c-member__title 特務員
+          .c-member__body
+            p.c-lead.c-lead--centered Rebuild Boosterには他にもこういった事ができるメンバーがいます。
+            ul.c-member-list.c-member-list--small
+              li.c-member-list__item 企画・デザイン
+              li.c-member-list__item プロデュース
+              li.c-member-list__item フロント・プログラム
+              li.c-member-list__item 会計・法務
+              li.c-member-list__item マーケ・分析
 
   section.c-section
     header.c-section__header
