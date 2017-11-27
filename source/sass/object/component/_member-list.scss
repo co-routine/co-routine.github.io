@@ -1,0 +1,28 @@
+.c-member-list {
+  display: flex;
+  @extend %list-reset;
+
+  & + & {
+    margin-top: 40px;
+  }
+
+  &__item {
+    width: 48%;
+
+    & + & {
+      margin-left: 4%;
+    }
+  }
+
+  &--small {
+    display: block;
+    text-align: center;
+
+    .c-member-list__item {
+      display: inline-block;
+      width: auto;
+      margin: 15px;
+      padding: 15px;
+    }
+  }
+}

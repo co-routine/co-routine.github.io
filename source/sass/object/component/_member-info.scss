@@ -1,0 +1,15 @@
+.c-member-info {
+  &__img {
+    text-align: center;
+
+    .c-img {
+      display: inline-block;
+      width: 46%;
+    }
+  }
+
+  &__name {
+    font-size: 1.6em;
+  }
+  &__desc {}
+}

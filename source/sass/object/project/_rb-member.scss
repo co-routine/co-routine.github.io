@@ -1,0 +1,40 @@
+/* Rebuild Booster LP メンバーページ */
+.p-rb-member {
+  background-color: $color-secondary;
+}
+
+.p-rb-member-list {
+  .c-member-list__item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2%;
+  }
+}
+
+.p-rb-member-list--small {
+  .c-member-list__item {
+    background-color: #fff;
+    padding: 16px 26px;
+  }
+}
+
+
+
+/**/
+.p-rb-catch {
+  background: gray;
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+
+  &--has-arrow {
+    position: relative;
+
+    &::after {
+      content: '';
+    }
+  }
+}

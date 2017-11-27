@@ -21,7 +21,7 @@ block body
       h2.c-h.c-h--medium.c-h--centered 社内チームでの開発、上手くいっていますか?
     .c-section__body
       .c-container.c-container--small
-        p.c-lead 社内チームでの開発が上手くいっていないあなた、こんな事を考えていませんか？
+        p.c-lead こんな事を感じていませんか？
         .c-voice
           ul.c-voice__list
             li.c-voice__list__item 開発経験が浅いなぁ...
@@ -34,7 +34,8 @@ block body
             li.c-voice__list__item スキルが足りない...
           .c-voice__fig
             img(src="http://placehold.jp/150x150.png", alt="")
-        p Rebuild Boosterはそんな開発チームを前進させます
+        .p-rb-catch
+          p Rebuild Boosterがそんな開発チームを前進させます
 
   section.c-section
     header.c-section__header
@@ -84,7 +85,7 @@ block body
 
   include ../template/_contact-lp
 
-  section.c-section
+  section.c-section.p-rb-member
     header.c-section__header
       h2.c-h.c-h--medium.c-h--centered こんなメンバーがお手伝いします。
     .c-section__body
@@ -93,52 +94,57 @@ block body
           header.c-member__header
             h3.c-h.c-h--centered.c-member__title 主要メンバー
           .c-member__body
-            ul.c-member-list
+            ul.c-member-list.p-rb-member-list
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
-                    img(src="http://placehold.jp/240x240.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__desc__name 1号
-                    p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
-                    p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
+                    .c-img
+                      img(src="http://placehold.jp/240x240.png", alt="")
+                    p.c-member-info__name 1号
+                    .c-member-info__desc
+                      p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
+                      p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
-                    img(src="http://placehold.jp/240x240.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__desc__name 2号
-                    p 最近プライベートも充実してきた、ハッピーなエンジニア。
-                    p 技術コミュニティの運営に関わるなど、コミュニケーションにたけている
-            ul.c-member-list
+                    .c-img
+                      img(src="http://placehold.jp/240x240.png", alt="")
+                    p.c-member-info__name 2号
+                    .c-member-info__desc
+                      p 最近プライベートも充実してきた、ハッピーなエンジニア。
+                      p 技術コミュニティの運営に関わるなど、コミュニケーションにたけている。
+            ul.c-member-list.p-rb-member-list
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
-                    img(src="http://placehold.jp/240x240.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__desc__name 3号
-                    p いつもニコニコしているがプライドが高い(だろう)エンジニア。
-                    p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
+                    .c-img
+                      img(src="http://placehold.jp/240x240.png", alt="")
+                    p.c-member-info__name 3号
+                    .c-member-info__desc
+                      p いつもニコニコしているがプライドが高い(だろう)エンジニア。
+                      p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
-                    img(src="http://placehold.jp/240x240.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__desc__name 1号
-                    p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
-                    p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
+                    .c-img
+                      img(src="http://placehold.jp/240x240.png", alt="")
+                    p.c-member-info__name 4号
+                    .c-member-info__desc
+                      p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
+                      p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
 
         aside.c-member.c-member--other
           header.c-member__header
             h3.c-h.c-h--centered.c-member__title 特務員
           .c-member__body
-            p.c-lead.c-lead--centered Rebuild Boosterには他にもこういった事ができるメンバーがいます。
-            ul.c-member-list.c-member-list--small
-              li.c-member-list__item 企画・デザイン
-              li.c-member-list__item プロデュース
-              li.c-member-list__item フロント・プログラム
-              li.c-member-list__item 会計・法務
-              li.c-member-list__item マーケ・分析
+            .c-container.c-container--small
+              p.c-lead.c-lead--centered Rebuild Boosterには他にもこういった事ができるメンバーがいます。
+              ul.c-member-list.c-member-list--small.p-rb-member-list--small
+                li.c-member-list__item 企画・デザイン
+                li.c-member-list__item プロデュース
+                li.c-member-list__item フロント・プログラム
+                li.c-member-list__item 会計・法務
+                li.c-member-list__item マーケ・分析
 
   section.c-section
     header.c-section__header

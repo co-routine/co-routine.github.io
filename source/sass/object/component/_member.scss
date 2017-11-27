@@ -13,22 +13,3 @@
     font-size: 2rem;
   }
 }
-
-.c-member-list {
-  display: flex;
-  @extend %list-reset;
-
-  & + & {
-    margin-top: 40px;
-  }
-
-  &__item {
-    width: 46%;
-
-    & + & {
-      margin: 0 8%;
-    }
-  }
-}
-
-.c-member-info {}
