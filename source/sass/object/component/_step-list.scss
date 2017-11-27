@@ -7,6 +7,7 @@
     background-color: $color-base;
     padding: 2%;
     border-radius: 5px;
+    box-shadow: 0 6px 4px darken($rb-color-theme, 4.0);
 
     @include mq('small') {
       display: block;

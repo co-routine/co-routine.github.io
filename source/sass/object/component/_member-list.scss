@@ -8,6 +8,9 @@
 
   &__item {
     width: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px darken($color-secondary, 4.0);
 
     & + & {
       margin-left: 4%;
