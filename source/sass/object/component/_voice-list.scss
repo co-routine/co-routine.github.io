@@ -1,0 +1,27 @@
+.c-voice {
+
+
+  &__body {
+    @extend %clearfix;
+  }
+}
+
+.c-voice-list {
+  @extend %list-reset;
+  width: 50%;
+  float: left;
+
+  &__item {
+    font-weight: 600;
+    font-size: 1.3em;
+
+    &::before {
+      @extend .c-forte-list__item::before;
+    }
+
+
+    & + & {
+      margin-top: 0.6em;
+    }
+  }
+}

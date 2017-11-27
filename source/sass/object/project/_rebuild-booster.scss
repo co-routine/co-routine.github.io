@@ -24,23 +24,33 @@
   }
 }
 
-
-
-/**/
 .p-rb-catch {
-  background: gray;
+  padding: $base-margin;
+  margin-top: $base-margin * 2;
+  background: $rb-color-theme;
 
   p {
     text-align: center;
     font-size: 2rem;
+    color: $color-base;
   }
-
 
   &--has-arrow {
     position: relative;
 
     &::after {
       content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 60px 100px 0 100px;
+      border-color: $rb-color-theme transparent transparent transparent;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -100px;
+      margin-bottom: -60px;
     }
   }
 }
