@@ -1,3 +1,12 @@
+.p-rb-section {
+  background-color: $rb-color-theme;
+}
+
+.p-rb-section__title,
+.p-rb-text {
+  color: $color-base;
+}
+
 /* Rebuild Booster LP メンバーページ */
 .p-rb-member {
   background-color: $color-secondary;
@@ -35,6 +44,20 @@
 
     &::after {
       content: '';
+    }
+  }
+}
+
+.p-rb-flow {
+  background-color: $rb-color-theme;
+
+  &__section {
+    & + & {
+      margin-top: $base-margin * 2;
+    }
+
+    .c-h + .c-step-list {
+      margin-top: ($base-margin / 2);
     }
   }
 }

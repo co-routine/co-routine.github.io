@@ -1,0 +1,96 @@
+.c-step-list {
+  @extend %list-reset;
+
+  &__item {
+    display: table;
+    width: 100%;
+    background-color: $color-base;
+    padding: 2%;
+    border-radius: 5px;
+
+    @include mq('small') {
+      display: block;
+      padding: 4%;
+    }
+
+    & + & {
+      margin-top: 4em;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 40px 0 40px;
+        border-color: $color-base transparent transparent transparent;
+        position: absolute;
+        left: 50%;
+        top: -(30px + 15px);
+        margin-left: -40px;
+
+        @include mq('small') {
+          border-width: 20px 30px 0 30px;
+          margin-left: -30px;
+        }
+      }
+    }
+  }
+}
+
+.c-step {
+  &__header,
+  &__body {
+    display: table-cell;
+    vertical-align: middle;
+
+    @include mq('small') {
+      display: block;
+    }
+  }
+
+  &__header {
+    width: 25%;
+
+    @include mq('small') {
+      margin-top: 1em;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+
+    span {
+      display: block;
+      font-size: 16px;
+      color: $rb-color-theme;
+    }
+  }
+
+  &__body {
+    width: 75%;
+
+    @include mq('small') {
+      width: 100%;
+      margin-top: 1em;
+    }
+  }
+
+  &__footer {
+    text-align: right;
+    margin-top: 1.6em;
+
+    .c-note {
+      margin-top: 0.5em;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    border-bottom: 3px solid $rb-color-theme;
+    font-size: $font-base-size * 1.2;
+  }
+}

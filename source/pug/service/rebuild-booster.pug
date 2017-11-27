@@ -146,59 +146,66 @@ block body
                 li.c-member-list__item 会計・法務
                 li.c-member-list__item マーケ・分析
 
-  section.c-section
+  section.c-section.p-rb-flow
     header.c-section__header
-      h2.c-h.c-h--medium.c-h--centered ご契約の流れとサービス料金
+      h2.c-h.c-h--medium.c-h--centered.p-rb-section__title ご契約の流れとサービス料金
+      p.c-lead.c-lead--centered.p-rb-text 分析と実行の2つフェーズがあり、それぞれのご契約になります。
     .c-section__body
-      p.c-lead 分析と実行の2つフェーズがあり、それぞれのご契約になります。
-      section
-        h3.c-h.c-h--small 分析フェーズ: Booster1(2,3か月)
-        ol.c-step-list
-          li.c-step-list__item
-            .c-step__body
-              p.c-step__title
-                span STEP1
-              | ヒアリング
-              p
-                | 御社のプロジェクトマネージャー(意思決定者の方)より該当案件の概要、予算規模(残予算)、スケジュールなどをヒアリングします。
-                | 情報を元に弊社で1,2名の メンバーを選定します。※案 件規模により人数は違います。
-              p.c-note ※遠隔地の場合、別途交通費実費
-            footer.c-step__footer
-              p ご相談 ¥0/月
-          li.c-step-list__item
-            .c-step__body
-              p.c-step__title
-                span STEP2
-              | 該当案件の分析
-              p 御社にて、ヒアリングから得た情報を元に、開発員の方々から各種ドキュメント群やコミュニケーション手段、人員スキルなどの該当案件の分析を行います。
-              p 問題点のレポートやリスケジュール、追加予算の有無、ローンチのタイミングなどをご提出します。引き続き、本サービスをご利用いただけるかは、このSTEP2でご判断頂きます。
-              p.c-note ※料金は税抜価格
-            footer.c-step__footer
-              p ご契約 ¥750,000/月
+      section.p-rb-flow__section
+        .c-container.c-container--medium
+          h3.c-h.c-h--small.c-h--centered.p-rb-section__title Booster1: 分析フェーズ (2,3か月)
+          ol.c-step-list
+            li.c-step-list__item
+              header.c-step__header
+                p.c-step__title
+                  span STEP1
+                  | 「ヒアリング」
+              .c-step__body
+                p.c-lead 御社のプロジェクトマネージャー(意思決定者の方)より該当案件の概要、予算規模(残予算)、スケジュールなどをヒアリングします。
+                p.c-lead
+                  | 情報を元に弊社で1,2名の メンバーを選定します。<br>
+                  span.c-note ※案件規模により人数は違います。
+                footer.c-step__footer
+                  p.c-step__price ご相談 ¥0/月
+                  p.c-note ※遠隔地の場合、別途交通費実費
+            li.c-step-list__item
+              header.c-step__header
+                p.c-step__title
+                  span STEP2
+                  | 「該当案件の分析」
+              .c-step__body
+                p.c-lead 御社にて、ヒアリングから得た情報を元に、開発員の方々から各種ドキュメント群やコミュニケーション手段、人員スキルなどの該当案件の分析を行います。
+                p.c-lead 問題点のレポートやリスケジュール、追加予算の有無、ローンチのタイミングなどをご提出します。引き続き、本サービスをご利用いただけるかは、このSTEP2でご判断頂きます。
+                footer.c-step__footer
+                  p.c-step__price ご契約 ¥750,000/月
+                  p.c-note ※料金は税抜価格
 
-      section
-        h3.c-h.c-h--small 実行フェーズ: Booster2(3,4か月~)
-        ol.c-step-list
-          li.c-step-list__item
-            .c-step__body
-              p.c-step__title
-                span STEP3
-              | 改善策の実行
-              p 該当案件の分析を元に、マネジメント方法の確立や開発要件にあった人員を外部調達し、実際の開発をサポートいたします。
-              p プロジェクト実践型の社内トレーニングを兼ねているので、御社の開発員の方々は、スキルアップのスピードがあがってきます。
-              p.c-note ※遠隔地の場合、別途交通費実費
-            footer.c-step__footer
-              p ¥1,500,000~ /月
-          li.c-step-list__item
-            .c-step__body
-              p.c-step__title
-                span STEP4
-              | 完了と撤収
-              p チームの成長が十分にでき、ミッションが果たせたあとは、我々は撤収します。
-              p 一時的にチーム力が落ちたようにみえます。あまりにも極端におちるなど問題があるようでしたら、必要な手当てを行います。新たなミッションとして我々は役割を果たします。
-              p.c-note ※遠隔地の場合、別途交通費実費
-            footer.c-step__footer
-              p ご相談 ¥0/月
+      section.p-rb-flow__section
+        .c-container.c-container--medium
+          h3.c-h.c-h--small.c-h--centered.p-rb-section__title Booster2: 実行フェーズ (3,4か月~)
+          ol.c-step-list
+            li.c-step-list__item
+              header.c-step__header
+                p.c-step__title
+                  span STEP3
+                  | 「改善策の実行」
+              .c-step__body
+                p.c-lead 該当案件の分析を元に、マネジメント方法の確立や開発要件にあった人員を外部調達し、実際の開発をサポートいたします。
+                p.c-lead プロジェクト実践型の社内トレーニングを兼ねているので、御社の開発員の方々は、スキルアップのスピードがあがってきます。
+                footer.c-step__footer
+                  p.c-step__price ¥1,500,000~ /月
+                  p.c-note ※遠隔地の場合、別途交通費実費
+            li.c-step-list__item
+              header.c-step__header
+                p.c-step__title
+                  span STEP4
+                  | 「完了と撤収」
+              .c-step__body
+                p.c-lead チームの成長が十分にでき、ミッションが果たせたあとは、我々は撤収します。
+                p.c-lead 一時的にチーム力が落ちたようにみえます。あまりにも極端におちるなど問題があるようでしたら、必要な手当てを行います。新たなミッションとして我々は役割を果たします。
+                footer.c-step__footer
+                  p.c-step__price ご相談 ¥0/月
+                  p.c-note ※遠隔地の場合、別途交通費実費
 
   include ../template/_contact-lp
 
