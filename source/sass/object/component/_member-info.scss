@@ -1,15 +1,22 @@
 .c-member-info {
-  &__img {
-    text-align: center;
+  @extend %clearfix;
 
-    .c-img {
-      display: inline-block;
-      width: 46%;
+  &__img {
+    width: percentage(136px / 430px);
+    float: right;
+    opacity: 0.7;
+  }
+
+  &__desc {
+    width: percentage(294px / 430px);
+    float: left;
+
+    p + p {
+      margin-top: 0.6em;
     }
   }
 
   &__name {
     font-size: 1.6em;
   }
-  &__desc {}
 }

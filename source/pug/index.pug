@@ -13,16 +13,13 @@ block breadcrumb
   - pageLower = {}
 
 block body
-  .c-container
-    .c-hero
-      .c-hero__content
-        .c-hero__texts
-          .c-hero__texts__inner
-            h1.c-h.c-h--en.c-hero__title Rebuild your team.
-            p.c-lead.c-hero__lead あなたの開発チームを強くする
-      .c-hero__bg
-        .c-img
-          img(src=image_path +  "img-hero.jpg")
+  .c-hero.p-home-hero
+    .c-container.c-hero__content.c-hero__content--darken.p-home-hero__content
+      .c-hero__texts
+        .c-hero__texts__inner
+          h1.c-h.c-h--en.c-h--centered.c-hero__title(data-j-hero-title) Rebuild your team.
+          p.c-lead.c-lead--centered.c-hero__lead(data-j-hero-lead) あなたの開発チームを強くする
+    .c-hero__bg.p-home-hero__bg(style="background-image: url(/dist/image/img-hero.jpg)")
   section.c-section.p-top-about
     .c-container.c-container--small
       header.c-section__header

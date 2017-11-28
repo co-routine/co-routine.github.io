@@ -7,7 +7,43 @@
   color: $color-base;
 }
 
-/* Rebuild Booster LP メンバーページ */
+// Rebuild Booster Hero
+.p-rb-hero {
+  &__title,
+  &__lead {
+    color: $color-base;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {}
+  &__lead {
+    font-size: 1.2em;
+  }
+
+  &__symbol {
+    display: block;
+    width: 312px;
+    height: 272px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    margin-top: calc(-290px / 2);
+    margin-left: -(312px + 100px);
+  }
+  // dummy
+  .c-hero__bg {
+    background-color: $rb-color-theme;
+
+    &::after {
+      content: '';
+      padding-top: percentage(340px / $document-width--xlarge);
+    }
+  }
+}
+
+// Rebuild Booster メンバーエリア
 .p-rb-member {
   background-color: $color-secondary;
 }

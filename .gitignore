@@ -125,7 +125,6 @@ Temporary Items
 
 # cask packages
 .cask/
-dist/
 
 # Flycheck
 flycheck_*.el

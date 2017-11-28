@@ -17,9 +17,16 @@ block breadcrumb
     }
 
 block body
-  header
-    h1.c-h.c-h--centered Rebuild Booster
-    p.c-lead.c-lead--centered あなたの開発チームを前進させませんか？
+  .c-hero.p-rb-hero
+    .c-container.c-hero__content
+      .c-hero__texts
+        .c-hero__texts__inner
+          .p-rb-hero__symbol
+            .c-img
+              img(src=image_path + "rebuild-booster/img-rocket.png", alt="")
+          h1.c-h.c-h--centered.c-hero__title.p-rb-hero__title Rebuild Booster
+          p.c-lead.c-lead--centered.c-hero__lead.p-rb-hero__lead あなたの開発チームをさらに前進させるチーム
+    .c-hero__bg
   section.c-section
     header.c-section__header
       h2.c-h.c-h--medium.c-h--centered 社内チームでの開発、上手くいっていますか？
@@ -105,38 +112,40 @@ block body
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--1.png", alt="")
+                  .c-member-info__desc
                     p.c-member-info__name 1号
-                    .c-member-info__desc
-                      p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
-                      p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
+                    p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
+                    p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--2.png", alt="")
+                  .c-member-info__desc
                     p.c-member-info__name 2号
-                    .c-member-info__desc
-                      p 最近プライベートも充実してきた、ハッピーなエンジニア。
-                      p 技術コミュニティの運営に関わるなど、コミュニケーションにたけている。
+                    p 最近プライベートも充実してきた、ハッピーなエンジニア。
+                    p
+                      | マークアップをはじめとするWebフロントエンドの開発を得意としている。
+                      | 休日は技術コミュニティに携わっている。
             ul.c-member-list.p-rb-member-list
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--3.png", alt="")
+                  .c-member-info__desc
                     p.c-member-info__name 3号
-                    .c-member-info__desc
-                      p いつもニコニコしているがプライドが高い(だろう)エンジニア。
-                      p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
+                    p いつもニコニコしているがプライドが高い(だろう)エンジニア。
+                    p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
               li.c-member-list__item
                 .c-member-info
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--4.png", alt="")
+                  .c-member-info__desc
                     p.c-member-info__name 4号
-                    .c-member-info__desc
-                      p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
-                      p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
+                    p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
+                    p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
 
         aside.c-member.c-member--other
           header.c-member__header
