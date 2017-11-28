@@ -21,6 +21,17 @@
 .p-rb-member-list--small {
   .c-member-list__item {
     padding: 16px 26px;
+
+    @include mq('small') {
+      margin: 10px 0;
+    }
+  }
+}
+
+.p-member-small-container {
+  @include mq('small') {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -29,10 +40,19 @@
   margin-top: $base-margin * 2;
   background: $rb-color-theme;
 
+  @include mq('small') {
+    padding: $base-margin / 2.5;
+    margin-top: $base-margin * 1.2;
+  }
+
   p {
     text-align: center;
     font-size: 2rem;
     color: $color-base;
+
+    @include mq('small') {
+      font-size: 1.4rem;
+    }
   }
 
   &--has-arrow {
@@ -51,6 +71,12 @@
       left: 50%;
       margin-left: -100px;
       margin-bottom: -60px;
+
+      @include mq('small') {
+        border-width: 30px 50px 0 50px;
+        margin-left: -50px;
+        margin-bottom: -30px;
+      }
     }
   }
 }

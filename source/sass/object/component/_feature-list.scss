@@ -12,6 +12,11 @@
 
     & + & {
       margin-left: 3%;
+
+      @include mq('small') {
+        margin-left: 0;
+        margin-top: $base-margin;
+      }
     }
 
     @include mq(small) {

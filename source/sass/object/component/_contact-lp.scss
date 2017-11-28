@@ -1,6 +1,11 @@
 .c-contact-lp {
-  background-color: $color-accent;
+  background-color: $rb-color-theme;
   padding: $base-margin * 1.8 0;
+
+  @include mq('small') {
+    padding: $base-margin * 0.8 0;
+  }
+
   &__body {}
 
   &__btn {
@@ -15,10 +20,15 @@
         border: 4px solid $color-base;
         background-color: $color-base;
         font-weight: 600;
+        font-size: 1.4em;
+
+        @include mq('small') {
+          font-size: 1.2em;
+        }
 
         &:hover {
           border: 4px solid $color-base;
-          background-color: $color-accent;
+          background-color: transparent;
         }
       }
     }

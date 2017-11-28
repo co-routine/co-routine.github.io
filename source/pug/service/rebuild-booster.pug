@@ -10,7 +10,11 @@ block meta
   meta(property='og:url', content=baseURL + '/service/rebuild-booster.html')
 
 block breadcrumb
-  - pageLower = { page: {label: 'Rebuild Booster', path: '/service/rebuild-booster.html'} }
+  -
+    pageLower = {
+      page: {label: '事業内容', path: '/service/'},
+      page_lower: {label: 'Rebuild Booster', path: '/service/rebuild-booster.html'}
+    }
 
 block body
   header
@@ -138,7 +142,7 @@ block body
           header.c-member__header
             h3.c-h.c-h--centered.c-member__title 特務員
           .c-member__body
-            .c-container.c-container--small
+            .c-container.c-container--small.p-member-small-container
               p.c-lead.c-lead--centered Rebuild Boosterには他にもこういった事ができるメンバーがいます。
               ul.c-member-list.c-member-list--small.p-rb-member-list--small
                 li.c-member-list__item 企画・デザイン
@@ -209,5 +213,3 @@ block body
                   p.c-note ※遠隔地の場合、別途交通費実費
 
   include ../template/_contact-lp
-
-  include ../template/_contact

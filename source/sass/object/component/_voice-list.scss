@@ -11,9 +11,18 @@
   width: 50%;
   float: left;
 
+  @include mq('small') {
+    width: 100%;
+    float: none;
+  }
+
   &__item {
     font-weight: 600;
     font-size: 1.3em;
+
+    @include mq('small') {
+      font-size: 1.1em;
+    }
 
     &::before {
       @extend .c-forte-list__item::before;

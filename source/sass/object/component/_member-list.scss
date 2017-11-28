@@ -2,8 +2,12 @@
   display: flex;
   @extend %list-reset;
 
+  @include mq('small') {
+    display: block;
+  }
+
   & + & {
-    margin-top: 40px;
+    margin-top: $base-margin;
   }
 
   &__item {
@@ -12,8 +16,17 @@
     border-radius: 5px;
     box-shadow: 0 6px 8px darken($color-secondary, 4.0);
 
+    @include mq('small') {
+      width: 100%;
+    }
+
     & + & {
       margin-left: 4%;
+
+      @include mq('small') {
+        margin-left: 0;
+        margin-top: $base-margin;
+      }
     }
   }
 

@@ -12,6 +12,10 @@
       font-size: 60px;
       color: rgba($rb-color-theme, 0.4);
       z-index: 1;
+
+      @include mq('small') {
+        font-size: 50px;
+      }
     }
   }
 
