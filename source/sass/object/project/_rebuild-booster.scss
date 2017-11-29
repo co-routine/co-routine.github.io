@@ -9,49 +9,104 @@
 
 // Rebuild Booster Hero
 .p-rb-hero {
+  .c-hero__content {
+    overflow: hidden;
+  }
+
+  &__texts__inner {
+    text-align: left;
+
+    @include mq('small') {
+      text-align: center;
+    }
+  }
+
   &__title,
   &__lead {
     color: $color-base;
     position: relative;
     z-index: 1;
+    transform: translate3d(-60px, 0, 0);
+    opacity: 0;
+    transition: 0.4s $ease-out-quart 0s;
+
+    &.is-show {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 
   &__title {}
   &__lead {
     font-size: 1.2em;
+
+    @include mq('small') {
+      font-size: 0.9em;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+    text-align: left;
+    opacity: 0;
+    transition: 0.4s $ease-out-quart 0s;
+    position: relative;
+    z-index: 1;
+
+    @include mq('small') {
+      text-align: center;
+    }
+
+    &.is-show {
+      opacity: 1;
+    }
   }
 
   &__symbol {
     display: block;
-    width: 312px;
-    height: 272px;
+    width: 230px;
+    height: 256.5px;
     position: absolute;
     left: 50%;
     top: 50%;
+    margin-top: calc(-256px / 2);
+    margin-left: 140px;
+    transform: translate3d(-75px,75px,0);
+    opacity: 0;
+    transition: 0.5s $ease-out-quart 0s;
     z-index: 0;
-    margin-top: calc(-290px / 2);
-    margin-left: -(312px + 100px);
+
+    @include mq('small') {
+      width: 165px;
+      height: 128.5px;
+      margin-top: -((128px + 40px) / 2);
+      margin-left: -82.5px;
+      transform: translate3d(-75px,75px,0);
+    }
+
+    &.is-show {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
   }
-  // dummy
+
   .c-hero__bg {
     background-color: $rb-color-theme;
 
     &::after {
       content: '';
       padding-top: percentage(340px / $document-width--xlarge);
+
+      @include mq('small') {
+        padding-top: percentage(240px / $document-width--small);
+      }
     }
   }
 }
 
 // Rebuild Booster メンバーエリア
 .p-rb-member {
-  background-color: $color-secondary;
-}
-
-.p-rb-member-list {
-  .c-member-list__item {
-    padding: 2%;
-  }
+  background-color: lighten($rb-color-theme, 45%);
 }
 
 .p-rb-member-list--small {

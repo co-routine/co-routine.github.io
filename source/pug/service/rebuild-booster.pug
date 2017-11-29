@@ -2,30 +2,32 @@ extends ../_base
 block config
   include ../_config
 block title
-  title 事業内容 | #{siteName}
+  title Rebuild Booster あなたの開発チームをさらに前進させるチーム | #{siteName}
 block meta
-  meta(name='description', content='事業内容のページ。技術教育や技術顧問、IT コンサルティング・開発マネジメント、システム開発など弊社の事業について紹介します。' + siteDescription)
-  meta(property='og:description', content='事業内容のページ。技術教育や技術顧問、IT コンサルティング・開発マネジメント、システム開発など弊社の事業について紹介します。' + siteDescription)
-  meta(property='og:title', content='事業内容 | ' + siteName)
+  meta(name='description', content='Rebuild Boosterのページ。技術教育や技術顧問、IT コンサルティング・開発マネジメント、システム開発など弊社の事業について紹介します。' + siteDescription)
+  meta(property='og:description', content='Rebuild Boosterのページ。技術教育や技術顧問、IT コンサルティング・開発マネジメント、システム開発など弊社の事業について紹介します。' + siteDescription)
+  meta(property='og:title', content='Rebuild Booster あなたの開発チームをさらに前進させるチーム | ' + siteName)
   meta(property='og:url', content=baseURL + '/service/rebuild-booster.html')
 
 block breadcrumb
   -
     pageLower = {
-      page: {label: '事業内容', path: '/service/'},
+      page: {label: 'Rebuild Booster', path: '/service/'},
       page_lower: {label: 'Rebuild Booster', path: '/service/rebuild-booster.html'}
     }
 
 block body
   .c-hero.p-rb-hero
-    .c-container.c-hero__content
+    .c-container.c-container--small.c-hero__content
       .c-hero__texts
-        .c-hero__texts__inner
+        .c-hero__texts__inner.p-rb-hero__texts__inner
           .p-rb-hero__symbol
             .c-img
               img(src=image_path + "rebuild-booster/img-rocket.png", alt="")
-          h1.c-h.c-h--centered.c-hero__title.p-rb-hero__title Rebuild Booster
-          p.c-lead.c-lead--centered.c-hero__lead.p-rb-hero__lead あなたの開発チームをさらに前進させるチーム
+          h1.c-h.c-hero__title.p-rb-hero__title Rebuild Booster
+          p.c-lead.c-hero__lead.p-rb-hero__lead あなたの開発チームをさらに前進させるチーム
+          .c-btn.c-btn--white.c-btn--detail.p-rb-hero__btn
+            a(href="/contact/") 今すぐ相談する
     .c-hero__bg
   section.c-section
     header.c-section__header
@@ -91,7 +93,7 @@ block body
               .c-feature__body
                 .c-feature__img
                   .c-img
-                    img(src=image_path + "rebuild-booster/icon-rocket.svg", alt="")
+                    img(src=image_path + "rebuild-booster/icon-feature-rocket.svg", alt="")
                 p.c-lead チームが十分に成長し、問題が解決できたとき、Rebuild Boosterは離れます。
                 p.c-lead もし更に前進する必要があり、私達が助けになれるのであればその際は再度お力になります。
 
@@ -109,43 +111,43 @@ block body
             ul.c-member-list.p-rb-member-list
               li.c-member-list__item
                 .c-member-info
+                  .c-member-info__desc
+                    p.c-member-info__name 1号
+                    p.c-lead 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
+                    p.c-lead 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--1.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__name 1号
-                    p 決して怒ることがないチームリーダー。サー バー技術に広く知識があるするどい理論派。
-                    p 開発マネジメントにたけ、チームメンバーの教育 (ベーススキルの底上げ) ワークフロー改善を得意とする。
               li.c-member-list__item
                 .c-member-info
+                  .c-member-info__desc
+                    p.c-member-info__name 2号
+                    p.c-lead 最近プライベートも充実してきた、ハッピーなエンジニア。
+                    p.c-lead
+                      | マークアップをはじめとするWebフロントエンドの開発を得意としている。
+                      | 休日は技術コミュニティに携わっている。
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--2.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__name 2号
-                    p 最近プライベートも充実してきた、ハッピーなエンジニア。
-                    p
-                      | マークアップをはじめとするWebフロントエンドの開発を得意としている。
-                      | 休日は技術コミュニティに携わっている。
             ul.c-member-list.p-rb-member-list
               li.c-member-list__item
                 .c-member-info
+                  .c-member-info__desc
+                    p.c-member-info__name 3号
+                    p.c-lead いつもニコニコしているがプライドが高い(だろう)エンジニア。
+                    p.c-lead あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
                   .c-member-info__img
                     .c-img
                       img(src=image_path + "rebuild-booster/img-member--3.png", alt="")
-                  .c-member-info__desc
-                    p.c-member-info__name 3号
-                    p いつもニコニコしているがプライドが高い(だろう)エンジニア。
-                    p あらゆる技術に貪欲で知識吸収し実践する高潔人。ユーザー要求をくみ取り、設計に落とし込むその姿は、とても頼もしい。実家はとても田舎。
               li.c-member-list__item
                 .c-member-info
-                  .c-member-info__img
-                    .c-img
-                      img(src=image_path + "rebuild-booster/img-member--4.png", alt="")
                   .c-member-info__desc
                     p.c-member-info__name 4号
                     p 関東からきた妖精。なんの因果かコテコテの大阪に舞い降りた一輪の花。
                     p 人前では泣き言はいわなず、もくもくとこなすその作業は人の心を響かせる。裏ではどうなのか不明だが今日も明るく元気に邁進中。
+                  .c-member-info__img
+                    .c-img
+                      img(src=image_path + "rebuild-booster/img-member--4.png", alt="")
 
         aside.c-member.c-member--other
           header.c-member__header
@@ -156,7 +158,7 @@ block body
               ul.c-member-list.c-member-list--small.p-rb-member-list--small
                 li.c-member-list__item 企画・デザイン
                 li.c-member-list__item プロデュース
-                li.c-member-list__item フロント・プログラム
+                li.c-member-list__item スマートフォンアプリ開発
                 li.c-member-list__item 会計・法務
                 li.c-member-list__item マーケ・分析
 
@@ -216,7 +218,7 @@ block body
                   | 「完了と撤収」
               .c-step__body
                 p.c-lead チームの成長が十分にでき、ミッションが果たせたあとは、我々は撤収します。
-                p.c-lead 一時的にチーム力が落ちたようにみえます。あまりにも極端におちるなど問題があるようでしたら、必要な手当てを行います。新たなミッションとして我々は役割を果たします。
+                p.c-lead 一時的にチーム力が落ちたようにみえます。あまりにも極端におちるなど問題があるようでしたら、必要な手当てを行い、その後新たなミッションとして我々は役割を果たします。
                 footer.c-step__footer
                   p.c-step__price ご相談 ¥0/月
                   p.c-note ※遠隔地の場合、別途交通費実費
