@@ -1,0 +1,15 @@
+.u-d-pc {
+  display: block;
+
+  @include mq('small') {
+    display: none;
+  }
+}
+
+.u-d-sp {
+  display: none;
+
+  @include mq('small') {
+    display: block;
+  }
+}

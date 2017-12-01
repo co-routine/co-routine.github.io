@@ -27,5 +27,9 @@
 
   &__footer {
     margin-top: $base-margin;
+
+    > * + * {
+      margin-top: $base-margin;
+    }
   }
 }
