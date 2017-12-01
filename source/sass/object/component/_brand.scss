@@ -1,19 +1,11 @@
 .c-brand {
-  margin-top: 0.2em;
-  line-height: 1;
+  width: percentage(458px / $document-width--large);
 
-  @include mq('medium') {
-    margin-top: 0.4em;
+  @include mq('small') {
+    width: auto;
   }
 
-  a {
-    @include font-en;
-    text-decoration: none;
-    font-size: 32px;
-    color: $color-primary;
-
-    @include mq('medium') {
-      font-size: 1.4rem;
-    }
+  a img {
+    width: 100%;
   }
 }
