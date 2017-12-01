@@ -1,4 +1,9 @@
 .c-global-footer {
-  background-color: $color-primary;
-  padding: $base-margin 0 $base-margin * 2;
+  background-color: $color-base;
+
+  .c-container {
+    border-top: 1px solid $color-border-base;
+    padding-top: $base-margin;
+    padding-bottom: $base-margin * 2;
+  }
 }

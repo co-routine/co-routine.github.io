@@ -10,7 +10,7 @@
   }
 
   &--bg-accent {
-    background-color: $color-secondary;
+    background-color: lighten($color-accent, 45%);
   }
 
   &--lower {
