@@ -28,6 +28,18 @@
     }
   }
 
+  &--white {
+    a {
+      border: 4px solid #ffffff;
+      background-color: #ffffff;
+
+      &:hover {
+        border: 4px solid #ffffff;
+        background-color: transparent;
+      }
+    }
+  }
+
   &--detail {
     a::after {
       content: '';

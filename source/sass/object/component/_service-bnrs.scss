@@ -1,0 +1,24 @@
+.c-service__bnrs {
+  text-align: center;
+
+  > * + * {
+    margin-top: $base-margin;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &--rb {
+      max-width: 780px;
+
+      @include mq('small') {
+        max-width: 320px;
+      }
+    }
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

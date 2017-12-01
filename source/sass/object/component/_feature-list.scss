@@ -1,0 +1,26 @@
+.c-feature-list {
+  display: flex;
+  @extend %list-reset;
+  margin-top: 4em;
+
+  @include mq(small) {
+    display: block;
+  }
+
+  &__item {
+    width: 48%;
+
+    & + & {
+      margin-left: 3%;
+
+      @include mq('small') {
+        margin-left: 0;
+        margin-top: $base-margin;
+      }
+    }
+
+    @include mq(small) {
+      width: 100%;
+    }
+  }
+}

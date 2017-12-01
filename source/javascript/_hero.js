@@ -1,7 +1,7 @@
 export default class Hero {
   constructor() {
-    this.$heroTitle = $('.c-hero__title');
-    this.$heroLead = $('.c-hero__lead');
+    this.$heroTitle = $('[data-j-hero-title]');
+    this.$heroLead = $('[data-j-hero-lead]');
 
     $(window).on({
       'load': () => {
