@@ -1,0 +1,44 @@
+.c-member-list {
+  display: flex;
+  @extend %list-reset;
+
+  @include mq('small') {
+    display: block;
+  }
+
+  & + & {
+    margin-top: $base-margin;
+  }
+
+  &__item {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px lighten($rb-color-theme, 42%);
+
+    @include mq('small') {
+      width: 100%;
+    }
+
+    & + & {
+      margin-left: 4%;
+
+      @include mq('small') {
+        margin-left: 0;
+        margin-top: $base-margin;
+      }
+    }
+  }
+
+  &--small {
+    display: block;
+    text-align: center;
+
+    .c-member-list__item {
+      display: inline-block;
+      width: auto;
+      margin: 15px;
+      padding: 15px;
+    }
+  }
+}

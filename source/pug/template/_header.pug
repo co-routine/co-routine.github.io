@@ -3,7 +3,8 @@ header.c-global-header
     .c-global-header__inner
       .c-global-header__brand
         p.c-brand
-          a(href="/") #{siteName}
+          a(href="/")
+            img(src=image_path + "img-brand.png", alt=siteName)
       .c-global-header__hamburger
         button.c-hamburger(data-j-hamburger)
           span

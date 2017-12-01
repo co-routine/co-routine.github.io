@@ -10,7 +10,7 @@
   }
 
   &--bg-accent {
-    background-color: $color-secondary;
+    background-color: lighten($color-accent, 45%);
   }
 
   &--lower {
@@ -27,5 +27,9 @@
 
   &__footer {
     margin-top: $base-margin;
+
+    > * + * {
+      margin-top: $base-margin;
+    }
   }
 }

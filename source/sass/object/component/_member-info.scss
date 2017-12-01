@@ -1,0 +1,27 @@
+.c-member-info {
+  display: table;
+  width: 100%;
+  padding: 3%;
+
+  &__img {
+    display: table-cell;
+    vertical-align: middle;
+    width: percentage(136px / 430px);
+    opacity: 0.7;
+  }
+
+  &__desc {
+    display: table-cell;
+    vertical-align: middle;
+    width: percentage(284px / 430px);
+    padding-right: percentage(10px / 430px);
+
+    p + p {
+      margin-top: 0.6em;
+    }
+  }
+
+  &__name {
+    font-size: 1.6em;
+  }
+}

@@ -1,0 +1,9 @@
+.p-home-hero {
+  &__content {
+    max-width: $document-width--xlarge - 20 * 2;
+  }
+
+  &__bg {
+    max-width: $document-width--xlarge - 20 * 2;
+  }
+}
