@@ -9,11 +9,11 @@ $base-margin: 40px;
 // Color
 $color-primary: #252525;
 $color-secondary: #e9e9e9;
-$color-accent: lightgreen;
+$color-accent: rgb(112, 173, 71);
 $color-base: #ffffff;
 $color-border-base: #e1e4e8;
 
-$rb-color-theme: rgb(112, 173, 71);
+$rb-color-theme: $color-accent;
 
 $font-base-size: 16px;
 $font-base-color: $color-primary;

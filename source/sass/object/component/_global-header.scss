@@ -12,6 +12,10 @@
 
   &__brand {
     float: left;
+
+    @include mq('medium') {
+      width: percentage(458px / 1160px);
+    }
   }
 
   &__content {
