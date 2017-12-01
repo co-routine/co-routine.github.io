@@ -27,7 +27,7 @@ block body
           h1.c-h.c-hero__title.p-rb-hero__title Rebuild Booster
           p.c-lead.c-hero__lead.p-rb-hero__lead あなたの開発チームをさらに前進させるチーム
           .c-btn.c-btn--white.c-btn--detail.p-rb-hero__btn
-            a(href="/contact/") 今すぐ相談する
+            a#gtm-mv-btn(href="/contact/") 今すぐ相談する
     .c-hero__bg
   section.c-section
     header.c-section__header
@@ -97,7 +97,11 @@ block body
                 p.c-lead チームが十分に成長し、問題が解決できたとき、Rebuild Boosterは離れます。
                 p.c-lead もし更に前進する必要があり、私達が助けになれるのであればその際は再度お力になります。
 
-  include ../template/_contact-lp
+  aside.c-contact-lp
+    .c-container.c-container--small
+      .c-contact-lp__btn
+        .c-btn.c-btn--white.c-btn--detail
+          a#gtm-af-feature(href="/contact/") Rebuild Boosterに相談する
 
   section.c-section.c-section--bg-accent.p-rb-member
     header.c-section__header
@@ -223,4 +227,8 @@ block body
                   p.c-step__price ご相談 ¥0/月
                   p.c-note ※遠隔地の場合、別途交通費実費
 
-  include ../template/_contact-lp
+  aside.c-contact-lp
+    .c-container.c-container--small
+      .c-contact-lp__btn
+        .c-btn.c-btn--white.c-btn--detail
+          a#gtm-af-flow(href="/contact/") Rebuild Boosterに相談する
