@@ -24,8 +24,39 @@ block body
           | 株式会社 coroutine では、技術教育や技術顧問、開発のコンサルティングなどを通して<br>お客様のビジネスのサポートを行っております。
           br
           | まずは一度お気軽にご相談ください。
-      .c-section__footer
-        .c-btn
-          a(href="mailto:contact@co-routine.com?subject=問い合わせ&amp;body=お問い合わせ内容を入力ください") coroutineに相談・依頼をする
-        p.c-note.c-note--centered
-          small ※クリックするとメーラーが起動します。
+        .c-form
+          form(name='contactform', action='thanks', netlify='')
+            .c-form-item
+              label.c-form-item__label-block(for="input-txt-name")
+                | 名前
+              input#input-txt-name(type='text', name='name', required, autofocus)
+            .c-form-item
+              label.c-form-item__label-block.c-form-item__label--en(for="input-txt-mail")
+                | Email
+              input#input-txt-mail(type='email', name='email', pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required)
+            .c-form-item
+              p.c-form-item__selecter
+                input#input-support-teach(type='radio', name='support', value='技術教育', required)
+                label(for="input-support-teach")
+                  | 技術教育
+              p.c-form-item__selecter
+                input#input-support-advisor(type='radio', name='support', value='技術顧問', required)
+                label(for="input-support-advisor")
+                  | 技術顧問
+              p.c-form-item__selecter
+                input#input-support-consultant(type='radio', name='support', value='ITコンサルタント・開発マネジメント', required)
+                label(for="input-support-consultant")
+                  | ITコンサルタント・開発マネジメント
+              p.c-form-item__selecter
+                input#input-support-development(type='radio', name='support', value='システム開発', required)
+                label(for="input-support-development")
+                  | システム開発
+            .c-form-item
+              label.c-form-item__label-block(for="input-textarea")
+                | 現状や改善したいことについて
+              textarea#input-textarea(name='message', required)
+            .c-form-item
+              p
+                .c-btn.c-btn--detail
+                  button(type='submit') 相談・依頼をする
+

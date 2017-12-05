@@ -1,0 +1,51 @@
+.c-form {
+  width: 70%;
+  margin: $base-margin * 2 auto 0;
+  padding: 0 20px;
+
+  @include mq('small') {
+    width: 100%;
+  }
+
+  &-item {
+    & + & {
+      margin-top: $base-margin - 10px;
+    }
+
+    &__label-block {
+      display: block;
+    }
+
+    &__label--en {
+      @include font-en;
+    }
+
+    // select や radio などの選択物 (縦に積む想定)
+    &__selecter {
+      & + & {
+        margin-top: 0.4em;
+      }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      display: block;
+      width: 100%;
+      border: 2px solid lighten($color-border-base, 5%);
+      color: lighten($font-base-color, 40%);
+    }
+
+    input:focus:valid,
+    textarea:focus:valid {
+      border: 2px solid $color-accent;
+    }
+
+    input:focus:invalid,
+    textarea:focus:invalid {
+      border: 2px solid #F5192F;
+    }
+
+
+  }
+}
