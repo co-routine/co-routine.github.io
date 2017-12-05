@@ -8,3 +8,12 @@
 p {
   margin: 0;
 }
+
+input[type='text'],
+input[type='email'],
+textarea {
+  background: none;
+  outline: 0;
+  border: none;
+  appearance: none;
+}

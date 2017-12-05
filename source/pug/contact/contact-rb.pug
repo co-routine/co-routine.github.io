@@ -1,0 +1,65 @@
+extends ../_base
+block config
+  include ../_config
+block title
+  title Rebuild Boosterお問い合わせ | #{siteName}
+block meta
+  meta(name='description', content='Rebuild Boosterお問い合わせのページ。' + siteDescription)
+  meta(property='og:description', content='Rebuild Boosterお問い合わせのページ。' + siteDescription)
+  meta(property='og:title', content='Rebuild Boosterお問い合わせ | ' + siteName)
+  meta(property='og:url', content=baseURL + '/contact/contact-rb.html')
+
+block breadcrumb
+  - pageLower = { page: {label: 'Rebuild Boosterお問い合わせ', path: '/contact/contact-rb.html'} }
+
+block body
+  header.c-hero-lower
+    .c-hero-lower__inner
+      h1.c-h.c-h--en.c-h--centered Contact
+      p.c-h.c-h--sub.c-h--centered Rebuild Booster お問い合わせ
+  section.c-section
+    .c-container.c-container--small
+      .c-section__body
+        p.c-lead.c-lead--centered
+          | Rebuild Boosterはお客様のチームやプロジェクトの状況を分析し、<br>
+          | チームを改善することでビジネスのサポートを行っております。
+        .c-form
+          form(name='contact-rb', action='thanks', netlify='')
+            .c-form-item
+              label.c-form-item__label-block(for="input-txt-name")
+                | 名前
+              input#input-txt-name(type='text', name='name', required, autofocus)
+            .c-form-item
+              label.c-form-item__label-block.c-form-item__label--en(for="input-txt-mail")
+                | Email
+              input#input-txt-mail(type='email', name='email', pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required)
+            .c-form-item
+              p.c-lead どこまでのご依頼をご希望ですか？
+              p.c-form-item__selecter
+                input#input-plan-step1(type='radio', name='plan', value='STEP1 ヒアリング', required)
+                label(for="input-plan-step1") STEP1 ヒアリング
+              p.c-form-item__desc 該当案件の概要、予算規模(残予算)、スケジュールなどをヒアリング
+              p.c-form-item__selecter
+                input#input-plan-step2(type='radio', name='plan', value='STEP2 該当案件の分析', required)
+                label(for="input-plan-step2") STEP2 該当案件の分析
+              p.c-form-item__desc
+                | ヒアリングから得た情報を元に、開発員の方々から各種ドキュメント群やコミュニケーション手段、人員スキルなどの該当案件の分析。<br>
+                | 問題点のレポートやリスケジュール、追加予算の有無、ローンチのタイミングなどをご提出。
+              p.c-form-item__selecter
+                input#input-plan-step3(type='radio', name='plan', value='STEP3 改善策の実行', required)
+                label(for="input-plan-step3") STEP3 改善策の実行
+              p.c-form-item__desc 該当案件の分析を元に、マネジメント方法の確立や開発要件にあった人員を外部調達し、実際の開発をサポート
+              p.c-form-item__selecter
+                input#input-plan-step4(type='radio', name='plan', value='STEP4 完了と撤収', required)
+                label(for="input-plan-step4") STEP4 完了と撤収
+              p.c-form-item__desc 撤収とアフターフォロー
+            .c-form-item
+              label.c-form-item__label-block(for="input-textarea")
+                | 現状の悩みや改善したいこと案件の規模感について
+              textarea#input-textarea(name='message', required)
+            footer.c-form__footer
+              p.c-note
+                | ※お問い合わせ頂いた上でお力になれそうか検討させていただきます。<br>
+                | 返事をお送りするまで少しお時間をいただく場合がございます。
+              .c-btn.c-btn--detail
+                button(type='submit') 相談・依頼をする
