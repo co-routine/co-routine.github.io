@@ -27,6 +27,16 @@
       }
     }
 
+    &__desc {
+      margin-left: 1.2em;
+      font-size: 0.9em;
+      color: lighten($font-base-color, 40%);
+
+      & + .c-form-item__selecter {
+        margin-top: 1em;
+      }
+    }
+
     input[type="text"],
     input[type="email"],
     textarea {
@@ -45,7 +55,13 @@
     textarea:focus:invalid {
       border: 2px solid #F5192F;
     }
+  }
 
+  &__footer {
+    margin-top: $base-margin + 10px;
 
+    * + * {
+      margin-top: 1em;
+    }
   }
 }

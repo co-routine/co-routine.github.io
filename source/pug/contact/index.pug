@@ -55,8 +55,10 @@ block body
               label.c-form-item__label-block(for="input-textarea")
                 | 現状や改善したいことについて
               textarea#input-textarea(name='message', required)
-            .c-form-item
-              p
-                .c-btn.c-btn--detail
-                  button(type='submit') 相談・依頼をする
+            footer.c-form__footer
+              p.c-note
+                | ※お問い合わせ頂いた上でお力になれそうか検討させていただきます。<br>
+                | 返事をお送りするまで少しお時間をいただく場合がございます。
+              .c-btn.c-btn--detail
+                button(type='submit') 相談・依頼をする
 
