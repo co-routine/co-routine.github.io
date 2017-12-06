@@ -1,7 +1,8 @@
 .c-btn {
   text-align: center;
 
-  a {
+  a,
+  button {
     display: inline-block;
     border: 1px solid $color-primary;
     padding: 18px 36px;

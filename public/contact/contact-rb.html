@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>お問い合わせ | coroutine inc.</title>
-    <meta name="description" content="お問い合わせのページ。株式会社coroutineは大阪を中心にWEB技術者の育成と、インターネットを用いたビジネスのサポートを行なう会社です。クラウドインフラの構築・運用、ウェブアプリケーションの開発を中心に受託開発しています。チームマネジメントや社内情報(ナレッジ)の共有、リモートワークに関してのサポートも行なえるため、先ずはご相談ください。">
-    <meta property="og:description" content="お問い合わせのページ。株式会社coroutineは大阪を中心にWEB技術者の育成と、インターネットを用いたビジネスのサポートを行なう会社です。クラウドインフラの構築・運用、ウェブアプリケーションの開発を中心に受託開発しています。チームマネジメントや社内情報(ナレッジ)の共有、リモートワークに関してのサポートも行なえるため、先ずはご相談ください。">
-    <meta property="og:title" content="お問い合わせ | coroutine inc.">
-    <meta property="og:url" content="https://co-routine.com/contact/">
+    <title>Rebuild Boosterお問い合わせ | coroutine inc.</title>
+    <meta name="description" content="Rebuild Boosterお問い合わせのページ。株式会社coroutineは大阪を中心にWEB技術者の育成と、インターネットを用いたビジネスのサポートを行なう会社です。クラウドインフラの構築・運用、ウェブアプリケーションの開発を中心に受託開発しています。チームマネジメントや社内情報(ナレッジ)の共有、リモートワークに関してのサポートも行なえるため、先ずはご相談ください。">
+    <meta property="og:description" content="Rebuild Boosterお問い合わせのページ。株式会社coroutineは大阪を中心にWEB技術者の育成と、インターネットを用いたビジネスのサポートを行なう会社です。クラウドインフラの構築・運用、ウェブアプリケーションの開発を中心に受託開発しています。チームマネジメントや社内情報(ナレッジ)の共有、リモートワークに関してのサポートも行なえるため、先ずはご相談ください。">
+    <meta property="og:title" content="Rebuild Boosterお問い合わせ | coroutine inc.">
+    <meta property="og:url" content="https://co-routine.com/contact/contact-rb.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://co-routine.com/dist/image/ogp.png">
     <meta property="og:site_name" content="coroutine inc.">
@@ -67,15 +67,18 @@
     <header class="c-hero-lower">
       <div class="c-hero-lower__inner">
         <h1 class="c-h c-h--en c-h--centered">Contact</h1>
-        <p class="c-h c-h--sub c-h--centered">お問い合わせ</p>
+        <p class="c-h c-h--sub c-h--centered">Rebuild Booster お問い合わせ</p>
       </div>
     </header>
     <section class="c-section">
       <div class="c-container c-container--small">
         <div class="c-section__body">
-          <p class="c-lead c-lead--centered">株式会社 coroutine では、技術教育や技術顧問、開発のコンサルティングなどを通して<br>お客様のビジネスのサポートを行っております。<br>まずは一度お気軽にご相談ください。</p>
+          <p class="c-lead c-lead--centered">
+            Rebuild Boosterはお客様のチームやプロジェクトの状況を分析し、<br>
+            チームを改善することでビジネスのサポートを行っております。
+          </p>
           <div class="c-form">
-            <form name="contact" action="thanks" netlify="">
+            <form name="contact-rb" action="thanks" netlify="">
               <div class="c-form-item">
                 <label class="c-form-item__label-block" for="input-txt-name">名前</label>
                 <input id="input-txt-name" type="text" name="name" required autofocus>
@@ -85,25 +88,33 @@
                 <input id="input-txt-mail" type="email" name="email" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" required>
               </div>
               <div class="c-form-item">
+                <p class="c-lead">どこまでのご依頼をご希望ですか？</p>
                 <p class="c-form-item__selecter">
-                  <input id="input-support-teach" type="radio" name="support" value="技術教育" required>
-                  <label for="input-support-teach">技術教育</label>
+                  <input id="input-plan-step1" type="radio" name="plan" value="STEP1 ヒアリング" required>
+                  <label for="input-plan-step1">STEP1 ヒアリング</label>
+                </p>
+                <p class="c-form-item__desc">該当案件の概要、予算規模(残予算)、スケジュールなどをヒアリング</p>
+                <p class="c-form-item__selecter">
+                  <input id="input-plan-step2" type="radio" name="plan" value="STEP2 該当案件の分析" required>
+                  <label for="input-plan-step2">STEP2 該当案件の分析</label>
+                </p>
+                <p class="c-form-item__desc">
+                  ヒアリングから得た情報を元に、開発員の方々から各種ドキュメント群やコミュニケーション手段、人員スキルなどの該当案件の分析。<br>
+                  問題点のレポートやリスケジュール、追加予算の有無、ローンチのタイミングなどをご提出。
                 </p>
                 <p class="c-form-item__selecter">
-                  <input id="input-support-advisor" type="radio" name="support" value="技術顧問" required>
-                  <label for="input-support-advisor">技術顧問</label>
+                  <input id="input-plan-step3" type="radio" name="plan" value="STEP3 改善策の実行" required>
+                  <label for="input-plan-step3">STEP3 改善策の実行</label>
                 </p>
+                <p class="c-form-item__desc">該当案件の分析を元に、マネジメント方法の確立や開発要件にあった人員を外部調達し、実際の開発をサポート</p>
                 <p class="c-form-item__selecter">
-                  <input id="input-support-consultant" type="radio" name="support" value="ITコンサルタント・開発マネジメント" required>
-                  <label for="input-support-consultant">ITコンサルタント・開発マネジメント</label>
+                  <input id="input-plan-step4" type="radio" name="plan" value="STEP4 完了と撤収" required>
+                  <label for="input-plan-step4">STEP4 完了と撤収</label>
                 </p>
-                <p class="c-form-item__selecter">
-                  <input id="input-support-development" type="radio" name="support" value="システム開発" required>
-                  <label for="input-support-development">システム開発</label>
-                </p>
+                <p class="c-form-item__desc">撤収とアフターフォロー</p>
               </div>
               <div class="c-form-item">
-                <label class="c-form-item__label-block" for="input-textarea">現状や改善したいことについて</label>
+                <label class="c-form-item__label-block" for="input-textarea">現状の悩みや改善したいこと案件の規模感について</label>
                 <textarea id="input-textarea" name="message" required></textarea>
               </div>
               <footer class="c-form__footer">
@@ -121,7 +132,7 @@
       </div>
     </section>
     <nav class="c-breadcrumbs">
-      <div class="c-container"><a href="/">トップページ</a><a href="/contact/">お問い合わせ</a>
+      <div class="c-container"><a href="/">トップページ</a><a href="/contact/contact-rb.html">Rebuild Boosterお問い合わせ</a>
       </div>
     </nav>
     <footer class="c-global-footer">
