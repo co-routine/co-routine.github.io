@@ -1,15 +1,25 @@
 .c-contact-lp {
-  background-color: $rb-color-theme;
+  background: lighten($color-accent, 25%);
   padding: $base-margin * 1.8 0;
 
   @include mq('small') {
     padding: $base-margin * 0.8 0;
   }
 
-  &__body {}
+  &__body {
+    background-color: $color-base;
+    padding: 30px 20px;
+    border-radius: 5px;
+
+    .c-lead {
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
 
   &__btn {
     text-align: center;
+    margin-top: 1em;
 
     .c-btn {
       display: inline-block;
