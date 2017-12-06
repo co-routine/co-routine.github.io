@@ -17,10 +17,6 @@
     @include mq('medium') {
       font-size: 16px;
     }
-
-    // @include mq('small') {
-    //   font-size: 16px;
-    // }
   }
 
   &--medium {
@@ -53,5 +49,9 @@
 
   &--en {
     @include font-en;
+  }
+
+  &--white {
+    color: #ffffff;
   }
 }

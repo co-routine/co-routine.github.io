@@ -14,7 +14,8 @@
     width: 48%;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 6px 8px lighten($rb-color-theme, 42%);
+    // box-shadow: 0 6px 8px lighten($rb-color-theme, 42%);
+    border: 2px solid $rb-color-theme;
 
     @include mq('small') {
       width: 100%;
