@@ -41,6 +41,30 @@
     }
   }
 
+  &--accent {
+    a {
+      border: 4px solid $color-accent;
+      background-color: $color-accent;
+      color: $color-base;
+
+      &::after {
+        border-top: 2px solid $color-base !important;
+        border-right: 2px solid $color-base !important;
+      }
+
+      &:hover {
+        border: 4px solid $color-accent;
+        background-color: transparent;
+        color: $color-accent;
+
+        &::after {
+          border-top: 2px solid $color-accent !important;
+          border-right: 2px solid $color-accent !important;
+        }
+      }
+    }
+  }
+
   &--detail {
     a::after {
       content: '';

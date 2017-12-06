@@ -30,7 +30,7 @@
 
     &:hover {
       .c-card__bg::after {
-        background-color: rgba($color-primary, 0.4);
+        background-color: rgba(100, 100, 100, 0.2);
       }
       .c-img--scale img {
         transform: scale(1.1);

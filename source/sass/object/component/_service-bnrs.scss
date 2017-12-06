@@ -7,6 +7,8 @@
 
   &__item {
     display: inline-block;
+    border: 1px solid $color-base;
+    transition: 0.2s $ease-out-quart 0s;
 
     &--rb {
       max-width: 780px;
@@ -14,6 +16,10 @@
       @include mq('small') {
         max-width: 320px;
       }
+    }
+
+    &:hover {
+      opacity: 0.8;
     }
 
     img {
