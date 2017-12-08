@@ -7,3 +7,16 @@
     max-width: $document-width--xlarge - 20 * 2;
   }
 }
+
+
+.p-home-info {
+  margin-top: $base-margin;
+
+  &__header {
+    margin-top: $base-margin / 2;
+  }
+
+  &__body {
+    margin-top: $base-margin / 2;
+  }
+}
