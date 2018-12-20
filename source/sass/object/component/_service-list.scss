@@ -1,5 +1,4 @@
 .c-service-list {
-  display: flex;
   list-style-type: none;
   padding-left: 0;
   margin: 0;
@@ -17,23 +16,11 @@
   }
 
   &__item {
-    width: 46%;
-
-    @include mq('medium') {
-      width: 100%;
-    }
 
     & + & {
-      margin-left: 8%;
-
-      @include mq('medium') {
-        margin-left: 0;
-        margin-top: $base-margin * 1.4;
-      }
-    }
-
-    &:nth-of-type(2n+1) {
-      margin-left: 0;
+      margin-top: $base-margin;
+      padding-top: $base-margin;
+      border-top: 1px solid #ddd;
     }
   }
 }
