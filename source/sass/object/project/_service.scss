@@ -5,9 +5,17 @@
       padding-top: percentage(200 / 534);
     }
   }
+
+  &__example {
+    margin-top: 2.5em;
+  }
 }
 
 .p-service__info__h {
   display: inline-block;
   border-bottom: 2px solid $color-accent;
+
+  @include mq('medium') {
+    font-size: 1.4em;
+  }
 }

@@ -1,0 +1,15 @@
+.c-service-example__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0.6em -0.4em 0;
+
+  &__item {
+    background-color: #fefefe;
+    border: 2px solid $color-accent;
+    border-radius: 10px;
+    padding: 0.4em 0.6em;
+    margin: 0.4em;
+  }
+}
