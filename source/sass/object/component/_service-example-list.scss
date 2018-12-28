@@ -1,0 +1,8 @@
+.c-service-example__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    border: 1px solid $color-accent;
+  }
+}
