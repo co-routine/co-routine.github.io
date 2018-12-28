@@ -14,10 +14,21 @@
   }
 
   &__body {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
 
     @include mq('medium') {
       margin-top: 10px;
     }
   }
+}
+
+.c-service-info__content {
+  width: 64%;
+  margin-right: 6%;
+}
+
+.c-service-info__img {
+  width: 30%;
 }
