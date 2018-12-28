@@ -1,5 +1,6 @@
 .c-service__bnrs {
   text-align: center;
+  margin-top: $base-margin;
 
   > * + * {
     margin-top: $base-margin;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all -p watch:*",
-    "build:pug": "pug source/pug/ --hierarchy -o public/dist -P",
+    "build:pug": "pug source/pug/ --hierarchy -o public/ -P",
     "build:sass": "node-sass --importer node_modules/node-sass-globbing/index.js source/sass/application.scss public/dist/stylesheet/application.css --output-style compressed",
     "build:js": "rollup -c -m",
     "build": "npm-run-all build:*",

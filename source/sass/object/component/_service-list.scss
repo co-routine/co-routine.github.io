@@ -16,11 +16,14 @@
   }
 
   &__item {
-
     & + & {
-      margin-top: $base-margin;
-      padding-top: $base-margin;
-      border-top: 1px solid #ddd;
+      margin-top: $base-margin * 1.5;
+      padding-top: $base-margin * 1.5;
+
+      @include mq('medium') {
+        margin-top: $base-margin;
+        padding-top: $base-margin;
+      }
     }
   }
 }
