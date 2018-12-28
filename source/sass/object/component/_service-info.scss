@@ -18,7 +18,8 @@
     flex-wrap: wrap;
     margin-top: 20px;
 
-    @include mq('medium') {
+    @include mq('small') {
+      flex-direction: column-reverse;
       margin-top: 10px;
     }
   }
@@ -27,8 +28,19 @@
 .c-service-info__content {
   width: 64%;
   margin-right: 6%;
+
+  @include mq('small') {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1em;
+  }
 }
 
 .c-service-info__img {
   width: 30%;
+
+  @include mq('small') {
+    width: 100%;
+    margin-top: 1em;
+  }
 }
